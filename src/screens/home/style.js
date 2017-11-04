@@ -8,6 +8,12 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
+  btn_play: {
+    width: 100,
+    height: 100,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
   row_background_image: {
     flex: 1,
     width: DEVICE_WIDTH,
