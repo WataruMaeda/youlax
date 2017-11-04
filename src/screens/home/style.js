@@ -4,22 +4,39 @@ export const { width: DEVICE_WIDTH, height: DEVICE_HEIGHT } = Dimensions.get('wi
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: 'black',
   },
   btn_play: {
     width: 100,
     height: 100,
-    justifyContent: 'center',
     alignItems: 'center',
+    justifyContent: 'center'
+  },
+  btn_right_menu_touchable: {
+    width: 44,
+    height: 44,
+    right: 10,
+    top: 20,
+    position:'absolute'
+  },
+  btn_left_menu_touchable: {
+    width: 44,
+    height: 44,
+    left: 10,
+    top: 20,
+    position:'absolute'
+  },
+  btn_header_menu: {
+    width: 28,
+    height: 28,
+    margin: 8
   },
   row_background_image: {
     flex: 1,
     width: DEVICE_WIDTH,
     height: DEVICE_HEIGHT,
-    justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'transparent',
+    justifyContent: 'center',
+    backgroundColor: 'transparent'
   }
 });
