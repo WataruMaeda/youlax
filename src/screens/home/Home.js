@@ -31,6 +31,9 @@ export default class Home extends React.Component {
           onPress={()=>this._pressMenu()}>
           <Image source={menuImage} style={styles.btn_header_menu}/>
         </TouchableOpacity>
+        <Text 
+          style={styles.lb_title}
+          numberOfLines={2}>Title of the Sound</Text>
         <TouchableOpacity
           style={styles.btn_right_menu_touchable}
           onPress={()=>this._pressTimer()}>

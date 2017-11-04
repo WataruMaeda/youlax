@@ -4,7 +4,21 @@ export const { width: DEVICE_WIDTH, height: DEVICE_HEIGHT } = Dimensions.get('wi
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'black',
+    backgroundColor: 'black'
+  },
+  lb_title: {
+    width: DEVICE_WIDTH - 124,
+    height: 44,
+    left: 62,
+    top: 20,
+    fontSize: 20,
+    color: 'white',
+    textAlign: 'center',
+    position:'absolute',
+    fontWeight: 'bold',
+    fontStyle: 'italic',
+    fontFamily: 'Baskerville',
+    backgroundColor: 'transparent'
   },
   btn_play: {
     width: 100,
