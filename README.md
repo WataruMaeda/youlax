@@ -2,9 +2,9 @@
 
 ## Features
 
-- [ ] Play Sound
+- [ ] Audio player
 - [ ] Background sound
-- [ ] Timer
+- [ ] Timer function
 - [ ] Realtime message with Firebase Database
 - [ ] Store sound data with Firebase Storage
 - [ ] Analitics with Firebase Analitics
