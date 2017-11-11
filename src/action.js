@@ -4,8 +4,11 @@ export function mapStateToProps(state) {
   
   export function mapDispatchToProps(dispatch) {
     return {
-      updateSelectedItem: (item) => {
-        dispatch( {type: 'SELECTED_ITEM', selectedItem: item} );
+      updateMenuState: (item) => {
+        dispatch( {type: 'MENU_STATE', menuState: item} );
+      },
+      updateSectionIndex: (item) => {
+        dispatch( {type: 'SECTION_INDEX', sectionIndex: item} );
       }
     }
   }

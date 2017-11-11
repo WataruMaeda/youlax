@@ -7,7 +7,11 @@ import { styles } from './style';
 // Assets
 const bgImage = require('../../assets/images/bg_side_menu.png');
 
-export default class Menu extends React.Component {
+// Redux
+import { connect } from 'react-redux';
+import { mapStateToProps, mapDispatchToProps } from '../../action';
+
+class Menu extends React.Component {
   render() {
     return (
       <View style={styles.container}>
@@ -20,3 +24,5 @@ export default class Menu extends React.Component {
     );
   }
 }
+
+export default connect(mapStateToProps, mapDispatchToProps)(Menu);

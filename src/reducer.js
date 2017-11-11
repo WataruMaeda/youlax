@@ -1,13 +1,20 @@
 const initialState = {
-    selectedItem: { title: "", image: "", sound: "" }
+  menuState: false,
+  sectionIndex: 0,
 }
   
 export default function reducer(state = initialState, action) {
     switch(action.type) {
-      case 'SELECTED_ITEM':
+      case 'MENU_STATE':
         return {
           ...state,
-          selectedItem: action.selectedItem
+          menuState: action.menuState
+        };
+
+      case 'SECTION_INDEX':
+        return {
+          ...state,
+          selectedItem: action.sectionIndex
         };
   
       default:

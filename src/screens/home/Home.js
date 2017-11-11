@@ -25,13 +25,13 @@ import { mapStateToProps, mapDispatchToProps } from '../../action';
 import SideMenu from 'react-native-side-menu';
 import Menu from '../menu/Menu';
 
-export default class Home extends React.Component {
+class Home extends React.Component {
   render() {
     return (
-      // <SideMenu
-      // menu={<Menu/>}
-      // isOpen={this.props.drawerState.isOpen}
-      // onChange={isOpen => this._changedMenuState(isOpen)}>
+      <SideMenu
+      menu={<Menu/>}
+      isOpen={this.props.menuState}
+      onChange={isOpen => this._changedMenuState(isOpen)}>
       <View style={styles.container}>
         <FlatList
           horizontal
@@ -52,7 +52,7 @@ export default class Home extends React.Component {
           <Image source={timerImage} style={styles.btn_header_menu}/>
         </TouchableOpacity>
       </View>
-    // </SideMenu>
+    </SideMenu>
     );
   }
 
@@ -74,8 +74,8 @@ export default class Home extends React.Component {
 
   _pressMenu() {
     console.log('pressed menu');
-    let drState = {isOpen: !this.props.drawerState.isOpen, selectedItem: ''};
-    this.props.updateMenuState(drState);
+    this.props.updateMenuState(!this.props.menuState);
+    console.log(this.props.menuState);
   }
 
   // Timer
@@ -89,4 +89,4 @@ export default class Home extends React.Component {
   }
 }
 
-// export default connect(mapStateToProps, mapDispatchToProps)(Home);
+export default connect(mapStateToProps, mapDispatchToProps)(Home);
