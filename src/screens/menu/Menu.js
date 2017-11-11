@@ -1,10 +1,11 @@
 import React from 'react';
 
 // Components
-import { View, Text, ImageBackground } from 'react-native';
+import { View, Text, ImageBackground, SectionList, TouchableOpacity } from 'react-native';
 import { styles } from './style';
 
 // Assets
+import { items } from '../../data/items'
 const bgImage = require('../../assets/images/bg_side_menu.png');
 
 // Redux
@@ -18,11 +19,29 @@ class Menu extends React.Component {
         <ImageBackground
           style={styles.bg_image}
           source={bgImage}>
-          <Text>menu</Text>
+          <SectionList
+            sections={[{data: items}]}
+            renderSectionHeader={this._renderHeader}
+            renderItem={this._renderRow}/>
         </ImageBackground>
       </View>
     );
   }
+
+  _renderHeader = () => (
+    <View style={styles.view_header}>
+      <Text>Heeeey</Text>
+    </View>
+  );
+
+  _renderRow = ({item}) => (
+    <TouchableOpacity onPress={()=>this._pressedPlaySound()}>
+      <ImageBackground
+        style={styles.row_background_image}
+        source={{uri: item["data"][0].image}}>
+      </ImageBackground>
+    </TouchableOpacity>
+  );
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Menu);

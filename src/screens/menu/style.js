@@ -20,16 +20,24 @@ export const styles = StyleSheet.create({
     fontFamily: 'Baskerville',
     backgroundColor: 'transparent'
   },
-  btn_play: {
-    width: 100,
-    height: 100,
-    alignItems: 'center',
-    justifyContent: 'center'
-  },
   bg_image: {
     flex: 1,
     width: DEVICE_WIDTH,
     height: DEVICE_HEIGHT,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'transparent'
+  },
+  view_header: {
+    width: DEVICE_WIDTH,
+    height: 200,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'transparent'
+  },
+  row_background_image: {
+    width: DEVICE_WIDTH,
+    height: 100,
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: 'transparent'

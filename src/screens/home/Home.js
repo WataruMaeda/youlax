@@ -10,9 +10,9 @@ import {
   Text 
 } from 'react-native';
 import { styles } from './style';
-import { items } from '../../data/items'
 
 // Assets
+import { items } from '../../data/items'
 const playImage = require('../../assets/icons/btn_play.png');
 const menuImage = require('../../assets/icons/btn_menu.png');
 const timerImage = require('../../assets/icons/btn_timer.png');
@@ -36,7 +36,7 @@ class Home extends React.Component {
         <FlatList
           horizontal
           pagingEnabled
-          data={items[this.props.sectionIndex]}
+          data={items[this.props.sectionIndex]["data"]}
           renderItem={this._renderRow}/>
         <TouchableOpacity
           style={styles.btn_left_menu_touchable}
