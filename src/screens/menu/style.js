@@ -7,11 +7,9 @@ export const styles = StyleSheet.create({
     backgroundColor: 'black'
   },
   lb_title: {
-    width: DEVICE_WIDTH - 124,
-    height: 44,
-    left: 62,
-    top: 20,
-    fontSize: 20,
+    width: DEVICE_WIDTH / 3 * 2,
+    height: 24,
+    fontSize: 24,
     color: 'white',
     textAlign: 'center',
     position:'absolute',
@@ -21,22 +19,21 @@ export const styles = StyleSheet.create({
     backgroundColor: 'transparent'
   },
   bg_image: {
-    flex: 1,
-    width: DEVICE_WIDTH,
+    width: DEVICE_WIDTH / 3 * 2,
     height: DEVICE_HEIGHT,
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: 'transparent'
   },
   view_header: {
-    width: DEVICE_WIDTH,
+    width: DEVICE_WIDTH / 3 * 2,
     height: 200,
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: 'transparent'
   },
   row_background_image: {
-    width: DEVICE_WIDTH,
+    width: DEVICE_WIDTH / 3 * 2,
     height: 100,
     alignItems: 'center',
     justifyContent: 'center',

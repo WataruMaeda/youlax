@@ -40,6 +40,7 @@ class Menu extends React.Component {
       <ImageBackground
         style={styles.row_background_image}
         source={{uri: item["data"][0].image}}>
+        <Text style={styles.lb_title}>{item["title"]}</Text>
       </ImageBackground>
     </TouchableOpacity>
   );

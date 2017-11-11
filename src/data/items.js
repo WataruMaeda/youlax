@@ -1,6 +1,7 @@
 class Section {
-  constructor(key, data) {
+  constructor(key, title, data) {
     this.key = key;
+    this.title = title;
     this.data = data;
   }
 }
@@ -76,9 +77,9 @@ const wind = [
 ]
 
 export const items = [
-  new Section(0, fire),
-  new Section(1, rain),
-  new Section(2, forest),
-  new Section(3, ocean),
-  new Section(4, wind)
+  new Section(0, 'Fire', fire),
+  new Section(1, 'Rain', rain),
+  new Section(2, 'Forest', forest),
+  new Section(3, 'Ocean', ocean),
+  new Section(4, 'Winds', wind)
 ]
