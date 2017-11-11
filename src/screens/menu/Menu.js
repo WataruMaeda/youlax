@@ -30,6 +30,7 @@ class Menu extends React.Component {
 
   _renderHeader = () => (
     <View style={styles.view_header}>
+    {/* TODO: Implement Profile Card*/ }
       <Text>Heeeey</Text>
     </View>
   );
