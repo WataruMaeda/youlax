@@ -14,11 +14,18 @@ import { store } from './src/store';
 // Navigation
 import { StackNavigator } from 'react-navigation';
 import Home from './src/screens/home/Home';
+import Menu from './src/screens/menu/Menu';
 const Navigation = StackNavigator({
-  Home: { 
+  Home: {
     screen: Home,
     navigationOptions: {
-      header: null,
+      header: null
+    }
+  },
+  Menu: {
+    screen: Menu,
+    navigationOptions: {
+      header: null
     }
   }
 });
