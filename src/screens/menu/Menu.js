@@ -35,13 +35,19 @@ class Menu extends React.Component {
   );
 
   _renderRow = ({item}) => (
-    <TouchableOpacity onPress={()=>this._pressedPlaySound()}>
+    <TouchableOpacity onPress={()=>this._pressedSection(item["key"])}>
       <ImageBackground
         style={styles.row_background_image}
         source={{uri: item["data"][0].image}}>
       </ImageBackground>
     </TouchableOpacity>
   );
+
+  _pressedSection(index) {
+    this.props.updateSectionIndex(index);
+    this.props.updateMenuState(false);
+    console.log(this.props.sectionIndex);
+  }
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Menu);

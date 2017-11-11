@@ -14,7 +14,7 @@ export default function reducer(state = initialState, action) {
       case 'SECTION_INDEX':
         return {
           ...state,
-          selectedItem: action.sectionIndex
+          sectionIndex: action.sectionIndex
         };
   
       default:
