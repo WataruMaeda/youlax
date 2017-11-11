@@ -36,7 +36,7 @@ class Home extends React.Component {
         <FlatList
           horizontal
           pagingEnabled
-          data={items[0]}
+          data={items[this.props.sectionIndex]}
           renderItem={this._renderRow}/>
         <TouchableOpacity
           style={styles.btn_left_menu_touchable}
@@ -70,12 +70,12 @@ class Home extends React.Component {
   // Side Menu
   _changedMenuState(isOpen) {
     console.log(isOpen);
+    this.props.updateMenuState(isOpen);
   }
 
   _pressMenu() {
     console.log('pressed menu');
     this.props.updateMenuState(!this.props.menuState);
-    console.log(this.props.menuState);
   }
 
   // Timer
