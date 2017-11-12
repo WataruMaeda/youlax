@@ -1,12 +1,13 @@
 import React from 'react';
 
 // Components
-import { View, Text, ImageBackground, SectionList, TouchableOpacity } from 'react-native';
+import { View, Text, Image, ImageBackground, SectionList, TouchableOpacity } from 'react-native';
 import { styles } from './style';
 
 // Assets
 import { items } from '../../data/items'
 const bgImage = require('../../assets/images/bg_side_menu.png');
+const checkImage = require('../../assets/icons/img-checked.png');
 
 // Redux
 import { connect } from 'react-redux';
@@ -41,6 +42,7 @@ class Menu extends React.Component {
         style={styles.row_background_image}
         source={{uri: item["data"][0].image}}>
         <Text style={styles.lb_title}>{item["title"]}</Text>
+        {this.props.sectionIndex == item["key"] && <Image source={checkImage} style={styles.check_image}/>}
       </ImageBackground>
     </TouchableOpacity>
   );

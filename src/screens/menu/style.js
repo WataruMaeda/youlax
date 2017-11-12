@@ -25,6 +25,13 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: 'transparent'
   },
+  check_image: {
+    width: 30,
+    height: 30,
+    right: 20,
+    alignSelf: 'flex-end',
+    backgroundColor: 'transparent'
+  },
   view_header: {
     width: DEVICE_WIDTH / 3 * 2,
     height: 200,
