@@ -32,9 +32,16 @@ class Menu extends React.Component {
   _renderHeader = () => (
     <View style={styles.view_header}>
     {/* TODO: Implement Profile Card*/ }
-      <Text>Heeeey</Text>
+      <TouchableOpacity onPress={this._pressedHeader.bind(this)}>
+        <Text>Heeeey</Text>
+      </TouchableOpacity>
     </View>
   );
+
+  _pressedHeader() {
+    this.props.updateMenuState(false);
+    this.props.updateMenuScreen('SETTINGS');
+  }
 
   _renderRow = ({item}) => (
     <TouchableOpacity onPress={()=>this._pressedSection(item["key"])}>
@@ -48,6 +55,7 @@ class Menu extends React.Component {
   );
 
   _pressedSection(index) {
+    this.props.updateMenuScreen('PLAYER');
     this.props.updateSectionIndex(index);
     this.props.updateMenuState(false);
     console.log(this.props.sectionIndex);
