@@ -7,6 +7,11 @@ export const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: 'black'
   },
+  containerHeader: {
+    width: DEVICE_WIDTH,
+    height: 100,
+    position:'absolute'
+  },
   lb_title: {
     width: DEVICE_WIDTH - 124,
     height: 44,

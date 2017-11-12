@@ -11,6 +11,7 @@ import {
 } from 'react-native';
 import { styles } from './style';
 import Settings from '../settings/Settings';
+import PlayerHeader from './PlayerHeader';
 
 // Assets
 import { items } from '../../data/items'
@@ -26,7 +27,17 @@ import { mapStateToProps, mapDispatchToProps } from '../../action';
 import SideMenu from 'react-native-side-menu';
 import Menu from '../menu/Menu';
 
+// Sound
+const Sound = require('react-native-sound');
+
 class Player extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      audioState: 'loading'
+    }
+  }
+
   render() {
     return (
       <View style={styles.container}>
@@ -35,19 +46,7 @@ class Player extends React.Component {
           pagingEnabled
           data={items[this.props.sectionIndex]["data"]}
           renderItem={this._renderRow}/>
-        <TouchableOpacity
-          style={styles.btn_left_menu_touchable}
-          onPress={()=>this._pressMenu()}>
-          <Image source={menuImage} style={styles.btn_header_menu}/>
-        </TouchableOpacity>
-        <Text 
-          style={styles.lb_title}
-          numberOfLines={2}>Title of the Sound</Text>
-        <TouchableOpacity
-          style={styles.btn_right_menu_touchable}
-          onPress={()=>this._pressTimer()}>
-          <Image source={timerImage} style={styles.btn_header_menu}/>
-        </TouchableOpacity>
+        <PlayerHeader/>
       </View>
     );
   }
@@ -62,16 +61,6 @@ class Player extends React.Component {
       </TouchableOpacity>
     </ImageBackground>
   );
-
-  _pressMenu() {
-    console.log('pressed menu');
-    this.props.updateMenuState(!this.props.menuState);
-  }
-
-  // Timer
-  _pressTimer() { 
-    console.log('pressed timer');
-  }
 
   // Sound
   _pressedPlaySound() {
