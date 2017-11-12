@@ -38,6 +38,22 @@ class Player extends React.Component {
     }
   }
 
+  componentDidMount() {
+    Sound.setCategory('Playback');
+    this.sound = new Sound('test.mp3', Sound.MAIN_BUNDLE, (error) => {
+        if (error) {
+            this.setState({audioState: 'failed'});
+            return;
+        }
+        this.setState({audioState: 'loaded'});
+    });
+  }
+
+  componentWillUnmount() {
+    this.sound.stop();
+    this.sound.release();
+  }
+
   render() {
     return (
       <View style={styles.container}>
@@ -56,15 +72,37 @@ class Player extends React.Component {
     <ImageBackground
       style={styles.row_background_image}
       source={{uri: item.image}}>
-      <TouchableOpacity onPress={()=>this._pressedPlaySound()}>
+      <TouchableOpacity onPress={()=>this._pressedPlaySound(item)}>
         <Image source={playImage} style={styles.btn_play}/>
       </TouchableOpacity>
     </ImageBackground>
   );
 
   // Sound
-  _pressedPlaySound() {
-   console.log('pressed play');
+  _pressedPlaySound(item) {
+    switch(this.state.audioState) {
+      case 'loaded': { this._play(); break; }
+      case 'playing': { this._pause(); break; }
+      case 'paused': { this._play(); break;  }
+      case 'finished': { this.setState({audioState: 'loaded'}); break; }
+      case 'failed': { Alert.alert('Failed to load sound'); break; }
+      default: break;
+    }
+  }
+
+  _play() {
+    this.setState({audioState: 'playing'});
+    this.sound.play((success) => {       
+        if (success) {
+            this.setState({audioState: 'finished'});
+            this._tappedPlay();
+        }
+      });
+  }
+
+  _pause() {
+    this.setState({audioState: 'paused'});
+    this.sound.pause();
   }
 }
 
