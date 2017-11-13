@@ -44,7 +44,7 @@ class Menu extends React.Component {
   }
 
   _renderRow = ({item}) => (
-    <TouchableOpacity onPress={()=>this._pressedSection(item["key"])}>
+    <TouchableOpacity onPress={()=>this._pressedSection(item)}>
       <ImageBackground
         style={styles.row_background_image}
         source={{uri: item["data"][0].image}}>
@@ -54,11 +54,11 @@ class Menu extends React.Component {
     </TouchableOpacity>
   );
 
-  _pressedSection(index) {
+  _pressedSection(item) {
     this.props.updateMenuScreen('PLAYER');
-    this.props.updateSectionIndex(index);
+    this.props.updateSectionIndex(item["key"]);
+    this.props.updateCurrentSound(item["data"][0].sound);
     this.props.updateMenuState(false);
-    console.log(this.props.sectionIndex);
   }
 }
 

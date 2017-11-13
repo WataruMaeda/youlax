@@ -31,7 +31,6 @@ class Home extends React.Component {
 
   // Side Menu
   _changedMenuState(isOpen) {
-    console.log(isOpen);
     this.props.updateMenuState(isOpen);
   }
 }

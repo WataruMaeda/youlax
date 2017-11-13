@@ -77,6 +77,18 @@
 		<data>
 		ZLKlNttwKoQrjMcbvyzMqYHzqzI=
 		</data>
+		<key>test_1.mp3</key>
+		<data>
+		dWbh1NRwLRXl1apgunPrrHgUNl8=
+		</data>
+		<key>test_2.mp3</key>
+		<data>
+		yyJP+hK7g570AieaX8dWtIQOd5M=
+		</data>
+		<key>test_3.mp3</key>
+		<data>
+		QHgPv3zpMaIbS9NqTpdTdFkjhTo=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -245,6 +257,39 @@
 			<key>hash2</key>
 			<data>
 			t+k3Q9zrg4/nCKjXk6xRL9vJdA/iTUWOyQo4iY1rnDQ=
+			</data>
+		</dict>
+		<key>test_1.mp3</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dWbh1NRwLRXl1apgunPrrHgUNl8=
+			</data>
+			<key>hash2</key>
+			<data>
+			sQaGxqwZDPlYCC3g5KMD/jE3KhdBXHaVPd7q4l9Y0EA=
+			</data>
+		</dict>
+		<key>test_2.mp3</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yyJP+hK7g570AieaX8dWtIQOd5M=
+			</data>
+			<key>hash2</key>
+			<data>
+			yg0Si32UlGF3ah2Eb3TVnl/uh5edLsG0i48v1vAmymo=
+			</data>
+		</dict>
+		<key>test_3.mp3</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QHgPv3zpMaIbS9NqTpdTdFkjhTo=
+			</data>
+			<key>hash2</key>
+			<data>
+			B5Vo6rAq6tu99qll8gvU1kZDuJz+4AiGvRw/V4IHfH8=
 			</data>
 		</dict>
 	</dict>

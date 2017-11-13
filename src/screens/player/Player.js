@@ -10,8 +10,8 @@ import {
   Text 
 } from 'react-native';
 import { styles } from './style';
-import Settings from '../settings/Settings';
 import PlayerHeader from './PlayerHeader';
+import Settings from '../settings/Settings';
 
 // Assets
 import { items } from '../../data/items'
@@ -40,18 +40,7 @@ class Player extends React.Component {
 
   componentDidMount() {
     Sound.setCategory('Playback');
-    this.sound = new Sound('test.mp3', Sound.MAIN_BUNDLE, (error) => {
-        if (error) {
-            this.setState({audioState: 'failed'});
-            return;
-        }
-        this.setState({audioState: 'loaded'});
-    });
-  }
-
-  componentWillUnmount() {
-    this.sound.stop();
-    this.sound.release();
+    this._prepareToPlay();
   }
 
   render() {
@@ -80,29 +69,47 @@ class Player extends React.Component {
 
   // Sound
   _pressedPlaySound(item) {
+    if (this.props.currentSound != item.sound) {
+      this.props.updateCurrentSound(item.sound);
+      this._release();
+      this._prepareToPlay();
+      return;
+    }
     switch(this.state.audioState) {
       case 'loaded': { this._play(); break; }
-      case 'playing': { this._pause(); break; }
       case 'paused': { this._play(); break;  }
-      case 'finished': { this.setState({audioState: 'loaded'}); break; }
+      case 'playing': { this._pause(); break; }
       case 'failed': { Alert.alert('Failed to load sound'); break; }
-      default: break;
+      default: { break; }
     }
+  }
+
+  _prepareToPlay() {
+    this.setState({audioState: 'loading'});
+    this.sound = new Sound(this.props.currentSound, Sound.MAIN_BUNDLE, (error) => {
+      if (error) {
+          this.setState({audioState: 'failed'});
+          return;
+      }
+      this.setState({audioState: 'loaded'});
+      this.sound.setNumberOfLoops(-1);
+      this._play();
+    });
   }
 
   _play() {
     this.setState({audioState: 'playing'});
-    this.sound.play((success) => {       
-        if (success) {
-            this.setState({audioState: 'finished'});
-            this._tappedPlay();
-        }
-      });
+    this.sound.play();
   }
 
   _pause() {
     this.setState({audioState: 'paused'});
     this.sound.pause();
+  }
+
+  _release() {
+    this.sound.stop();
+    this.sound.release();
   }
 }
 

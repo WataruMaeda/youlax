@@ -12,6 +12,9 @@ export function mapStateToProps(state) {
       },
       updateSectionIndex: (item) => {
         dispatch( {type: 'SECTION_INDEX', sectionIndex: item} );
+      },
+      updateCurrentSound: (item) => {
+        dispatch( {type: 'CURRENT_SOUND', currentSound: item} );
       }
     }
   }

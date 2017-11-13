@@ -2,6 +2,7 @@ const initialState = {
   menuState: false,
   menuScreen: 'PLAYER',
   sectionIndex: 0,
+  currentSound: 'test_1.mp3',
 }
   
 export default function reducer(state = initialState, action) {
@@ -23,7 +24,12 @@ export default function reducer(state = initialState, action) {
           ...state,
           sectionIndex: action.sectionIndex
         };
-  
+
+      case 'CURRENT_SOUND':
+        return {
+          ...state,
+          currentSound: action.currentSound
+        };
       default:
         return state
     }
