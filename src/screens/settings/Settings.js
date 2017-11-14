@@ -13,6 +13,7 @@ import { items } from '../../data/items'
 const backButton = require('../../assets/icons/btn_back.png');
 const bgImage = require('../../assets/images/bg_side_menu.png');
 const profilePlaceholderImage = require('../../assets/icons/img_profile_placeholder.png');
+const allowImage = require('../../assets/icons/btn_allow.png');
 
 class Settings extends React.Component {
   render() {
@@ -43,23 +44,31 @@ class Settings extends React.Component {
                 source={profilePlaceholderImage}/>
             </View>
               <TouchableOpacity onPress={this._pressedChangeProfile()}>
-                <Text style={{
-                  fontSize: 14, 
-                  color: '#23aadb', 
-                  margin: 10}}>
-                  Change Profile Photo
-                 </Text>
+                <Text style={styles.txt_change_profile}>Change Profile Photo</Text>
               </TouchableOpacity>
           </View>
           {/* Text input field */}
           <View style={styles.textinput_container}>
-            <View style={{flexDirection:'row', height: 50}}>
+            <View style={{flexDirection:'row'}}>
               <Text style={styles.textinput_label}>Name</Text>
               <TextInput
-              style={{height: 40}}
-              placeholder="Type here to translate!"
-              onChangeText={(text) => this.setState({text})}/>
+                style={styles.textInput_name}
+                color='white'
+                placeholder="Your Name"
+                placeholderTextColor='#8c8c8c'
+                onChangeText={(text) => this.setState({text})}/>
             </View>
+            <View style={[styles.view_line, {marginBottom: 12}]}/>
+            <View style={{flexDirection:'row'}}>
+              <Text style={styles.textinput_label}>Favorite{"\n"}Sound</Text>
+              <TouchableOpacity 
+                style={{flex: 1, marginRight: 16, justifyContent: 'center'}}
+                onPress={this._pressedFavoriteSong()}>
+                <Text style={{color: '#8c8c8c', fontSize: 14 }}>Fire</Text>
+                <Image style={{position: 'absolute', right: 10}} source={allowImage}/>
+              </TouchableOpacity>
+            </View>
+            <View style={styles.view_line}/>
           </View>
         </ImageBackground>
       </View>
@@ -76,6 +85,10 @@ class Settings extends React.Component {
 
   _pressedChangeProfile() {
     console.log('pressed change profile');
+  }
+
+  _pressedFavoriteSong() {
+    console.log('pressed favorite sound');
   }
 }
 

@@ -18,13 +18,13 @@ export const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   textinput_container: {
-    width: DEVICE_WIDTH,
-    height: 100
+    width: DEVICE_WIDTH
   },
   textinput_label: {
     width: 120,
-    height: 50,
-    fontSize: 20,
+    fontSize: 14,
+    marginTop: 10,
+    marginBottom: 10,
     color: 'white',
     textAlign: 'center',
   },
@@ -69,6 +69,22 @@ export const styles = StyleSheet.create({
     textAlign: 'center',
     position:'absolute',
     backgroundColor: 'transparent',
+  },
+  txt_change_profile: {
+    fontSize: 14, 
+    color: '#23aadb', 
+    margin: 10
+  },
+  textInput_name: {
+    flex: 1, 
+    fontSize: 14, 
+    marginRight: 16
+  },
+  view_line: {
+    flex : 1,
+    borderBottomColor: 'rgba(239, 240, 241, 0.3)',
+    borderBottomWidth: 2,
+    marginTop: 12
   },
   lb_title: {
     width: DEVICE_WIDTH - 124,
