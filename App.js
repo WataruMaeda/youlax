@@ -14,10 +14,24 @@ import { store } from './src/store';
 // Navigation
 import { StackNavigator } from 'react-navigation';
 import Home from './src/screens/home/Home';
+import Settings from './src/screens/settings/Settings';
+import Favorite from './src/screens/favorite/Favorite';
 
 const Navigation = StackNavigator({
   Home: {
     screen: Home,
+    navigationOptions: {
+      header: null
+    }
+  },
+  Settings: {
+    screen: Settings,
+    navigationOptions: {
+      header: null
+    }
+  },
+  Favorite: {
+    screen: Favorite,
     navigationOptions: {
       header: null
     }

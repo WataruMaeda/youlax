@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
   },
   header_container: {
     width: DEVICE_WIDTH,
-    height: 60
+    height: 60,
   },
   profile_image_container: {
     width: DEVICE_WIDTH,

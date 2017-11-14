@@ -7,14 +7,13 @@ export const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: 'black'
   },
-  containerHeader: {
+  header_container: {
     width: DEVICE_WIDTH,
-    height: 100,
-    position:'absolute'
+    height: 60
   },
   lb_title: {
     width: DEVICE_WIDTH - 124,
-    height: 44,
+    height: 20,
     left: 62,
     fontSize: 20,
     color: 'white',
@@ -22,16 +21,17 @@ export const styles = StyleSheet.create({
     position:'absolute',
     fontWeight: 'bold',
     backgroundColor: 'transparent',
-    ...ifIphoneX({ top: 40 }, { top: 20 })
+    ...ifIphoneX({ top: 43.5 }, { top: 23.5 })
   },
-  btn_play: {
-    width: 100,
-    height: 100,
+  bg_image: {
+    width: DEVICE_WIDTH ,
+    height: DEVICE_HEIGHT,
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    backgroundColor: 'transparent'
   },
   btn_right_menu_touchable: {
-    width: 44,
+    width: 54,
     height: 44,
     right: 10,
     position:'absolute',
@@ -49,10 +49,33 @@ export const styles = StyleSheet.create({
     height: 28,
     margin: 8
   },
+  txt_done: {
+    fontSize: 20,
+    color: 'white',
+    textAlign: 'center',
+    position:'absolute',
+    backgroundColor: 'transparent',
+  },
+  check_image: {
+    width: 30,
+    height: 30,
+    right: 20,
+    alignSelf: 'flex-end',
+    backgroundColor: 'transparent'
+  },
+  view_header: {
+    width: DEVICE_WIDTH ,
+    height: 200,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'transparent'
+  },
+  flatList_contents: {
+    ...ifIphoneX({ top: 40 }, { top: 20 })
+  },
   row_background_image: {
-    flex: 1,
-    width: DEVICE_WIDTH,
-    height: DEVICE_HEIGHT,
+    width: DEVICE_WIDTH ,
+    height: 100,
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: 'transparent'
