@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Components
-import { View, Text, Image, ImageBackground, TouchableOpacity, TextInput } from 'react-native';
+import { View, Text, Image, ImageBackground, TouchableOpacity, TextInput, FlatList } from 'react-native';
 import { styles } from './styles';
 
 // Redux
@@ -14,6 +14,7 @@ const backButton = require('../../assets/icons/btn_back.png');
 const bgImage = require('../../assets/images/bg_side_menu.png');
 const profilePlaceholderImage = require('../../assets/icons/img_profile_placeholder.png');
 const allowImage = require('../../assets/icons/btn_allow.png');
+const checkImage = require('../../assets/icons/img-checked.png');
 
 class Settings extends React.Component {
   render() {
@@ -63,16 +64,36 @@ class Settings extends React.Component {
               <Text style={styles.textinput_label}>Favorite{"\n"}Sound</Text>
               <TouchableOpacity 
                 style={{flex: 1, marginRight: 16, justifyContent: 'center'}}
-                onPress={() => this._pressedFavoriteSound()}>
+                onPress={this._pressedFavoriteSound.bind(this)}>
                 <Text style={{color: '#8c8c8c', fontSize: 14 }}>Fire</Text>
                 <Image style={{position: 'absolute', right: 10}} source={allowImage}/>
               </TouchableOpacity>
             </View>
             <View style={styles.view_line}/>
           </View>
+          <FlatList
+            data={items}
+            renderItem={this._renderRow}/>
         </ImageBackground>
       </View>
     );
+  }
+
+  _renderRow = ({item}) => (
+    <TouchableOpacity onPress={()=>this._pressedSection(item)}>
+      <ImageBackground
+        style={styles.row_background_image}
+        source={{uri: item["data"][0].image}}>
+        <Text style={styles.lb_title}>{item["title"]}</Text>
+        {this.props.sectionIndex == item["key"] && <Image source={checkImage} style={styles.check_image}/>}
+      </ImageBackground>
+    </TouchableOpacity>
+  );
+
+  _pressedSection(item) {
+    this.props.updateMenuScreen('PLAYER');
+    this.props.updateSectionIndex(item["key"]);
+    this.props.updateCurrentSound(item["data"][0].sound);
   }
 
   _pressBack() {

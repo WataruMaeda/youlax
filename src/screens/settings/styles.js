@@ -98,4 +98,18 @@ export const styles = StyleSheet.create({
     backgroundColor: 'transparent',
     ...ifIphoneX({ top: 43.5 }, { top: 23.5 })
   },
+  row_background_image: {
+    width: DEVICE_WIDTH ,
+    height: 100,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'transparent'
+  },
+  check_image: {
+    width: 30,
+    height: 30,
+    right: 20,
+    alignSelf: 'flex-end',
+    backgroundColor: 'transparent'
+  },
 });

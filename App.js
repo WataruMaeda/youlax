@@ -8,17 +8,16 @@ import React from 'react';
 
 // Redux
 import { Provider } from 'react-redux';
-import { mapStateToProps, mapDispatchToProps } from './src/action';
 import { store } from './src/store';
 
-// Navigation
-import Navigation from './src/components/Navigation';
+// Component
+import Home from './src/screens/home/Home';
 
 export default class App extends React.Component {
   render() {
     return (
       <Provider store={ store }>
-        <Navigation/>
+        <Home/>
       </Provider>
     );
   }
