@@ -17,7 +17,6 @@ const allowImage = require('../../assets/icons/btn_allow.png');
 
 class Settings extends React.Component {
   render() {
-    const { navigate } = this.props.navigation;
     return (
       <View style={styles.container}>
         <ImageBackground
@@ -64,7 +63,7 @@ class Settings extends React.Component {
               <Text style={styles.textinput_label}>Favorite{"\n"}Sound</Text>
               <TouchableOpacity 
                 style={{flex: 1, marginRight: 16, justifyContent: 'center'}}
-                onPress={() => navigate('Favorite')}>
+                onPress={() => this._pressedFavoriteSound()}>
                 <Text style={{color: '#8c8c8c', fontSize: 14 }}>Fire</Text>
                 <Image style={{position: 'absolute', right: 10}} source={allowImage}/>
               </TouchableOpacity>
@@ -86,6 +85,10 @@ class Settings extends React.Component {
 
   _pressedChangeProfile() {
     console.log('pressed change profile');
+  }
+
+  _pressedFavoriteSound() {
+
   }
 }
 
