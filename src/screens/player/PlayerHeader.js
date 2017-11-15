@@ -7,11 +7,13 @@ import {
   ImageBackground,
   TouchableOpacity, 
   View, 
-  Text 
+  Text,
+  Picker
 } from 'react-native';
 import { styles } from './style';
 
 // Assets
+const bgImage = require('../../assets/images/bg_side_menu.png')
 const menuImage = require('../../assets/icons/btn_menu.png');
 const timerImage = require('../../assets/icons/btn_timer.png');
 
@@ -19,11 +21,18 @@ const timerImage = require('../../assets/icons/btn_timer.png');
 import { connect } from 'react-redux';
 import { mapStateToProps, mapDispatchToProps } from '../../action';
 
-
 class PlayerHeader extends React.Component {
   render() {
     return (
       <View style={styles.containerHeader}>
+        {this.props.pickerState == true &&
+          <Picker
+            selectedValue='java'
+            onValueChange={(itemValue, itemIndex) => this.setState({language: itemValue})}>
+            <Picker.Item label="Java" value="java"/>
+            <Picker.Item label="JavaScript" value="js" />
+          </Picker>
+        }
         <TouchableOpacity
           style={styles.btn_left_menu_touchable}
           onPress={()=>this._pressMenu()}>
@@ -50,6 +59,7 @@ class PlayerHeader extends React.Component {
   // Timer
   _pressTimer() { 
     console.log('pressed timer');
+    this.props.updatePickerState(!this.props.pickerState);
   }
 }
 

@@ -102,6 +102,7 @@ class Settings extends React.Component {
   }
 
   _pressDone() {
+    this.props.updateFavoriteToggleState(false);
     console.log('pressed Done');
   }
 

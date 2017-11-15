@@ -7,7 +7,7 @@ import {
   ImageBackground,
   TouchableOpacity, 
   View, 
-  Text 
+  Text
 } from 'react-native';
 import { styles } from './style';
 import PlayerHeader from './PlayerHeader';

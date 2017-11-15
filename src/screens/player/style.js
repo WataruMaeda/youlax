@@ -5,12 +5,12 @@ export const { width: DEVICE_WIDTH, height: DEVICE_HEIGHT } = Dimensions.get('wi
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'black'
+    backgroundColor: 'white'
   },
   containerHeader: {
     width: DEVICE_WIDTH,
-    height: 100,
-    position:'absolute'
+    position:'absolute',
+    backgroundColor: 'white'
   },
   lb_title: {
     width: DEVICE_WIDTH - 124,
