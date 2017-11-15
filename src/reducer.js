@@ -3,6 +3,7 @@ const initialState = {
   menuScreen: 'PLAYER',
   sectionIndex: 0,
   currentSound: 'test_1.mp3',
+  favoriteToggleState: false,
 }
   
 export default function reducer(state = initialState, action) {
@@ -30,6 +31,13 @@ export default function reducer(state = initialState, action) {
           ...state,
           currentSound: action.currentSound
         };
+
+      case 'FAVORITE_TOGGLE_STATE':
+        return {
+          ...state,
+          favoriteToggleState: action.favoriteToggleState
+        };
+
       default:
         return state
     }

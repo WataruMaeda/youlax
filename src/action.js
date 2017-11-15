@@ -15,6 +15,9 @@ export function mapStateToProps(state) {
       },
       updateCurrentSound: (item) => {
         dispatch( {type: 'CURRENT_SOUND', currentSound: item} );
+      },
+      updateFavoriteToggleState: (item) => {
+        dispatch( {type: 'FAVORITE_TOGGLE_STATE', favoriteToggleState: item} );
       }
     }
   }

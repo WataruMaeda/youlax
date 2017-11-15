@@ -64,21 +64,21 @@ class Settings extends React.Component {
               <Text style={styles.textinput_label}>Favorite{"\n"}Sound</Text>
               <TouchableOpacity 
                 style={{flex: 1, marginRight: 16, justifyContent: 'center'}}
-                onPress={this._pressedFavoriteSound.bind(this)}>
+                onPress={() => this._pressedFavoriteSound()}>
                 <Text style={{color: '#8c8c8c', fontSize: 14 }}>Fire</Text>
                 <Image style={{position: 'absolute', right: 10}} source={allowImage}/>
               </TouchableOpacity>
             </View>
             <View style={styles.view_line}/>
           </View>
-          <FlatList
-            data={items}
-            renderItem={this._renderRow}/>
+          {/* FlatList */}
+          {this.props.favoriteToggleState == true && <FlatList data={items} renderItem={this._renderRow}/>}
         </ImageBackground>
       </View>
     );
   }
 
+  // FlatList
   _renderRow = ({item}) => (
     <TouchableOpacity onPress={()=>this._pressedSection(item)}>
       <ImageBackground
@@ -90,6 +90,7 @@ class Settings extends React.Component {
     </TouchableOpacity>
   );
 
+  // Actions
   _pressedSection(item) {
     this.props.updateMenuScreen('PLAYER');
     this.props.updateSectionIndex(item["key"]);
@@ -109,7 +110,7 @@ class Settings extends React.Component {
   }
 
   _pressedFavoriteSound() {
-
+    this.props.updateFavoriteToggleState(!this.props.favoriteToggleState);
   }
 }
 
