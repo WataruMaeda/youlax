@@ -5,7 +5,7 @@ export const { width: DEVICE_WIDTH, height: DEVICE_HEIGHT } = Dimensions.get('wi
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'white'
+    backgroundColor: 'black'
   },
   containerHeader: {
     width: DEVICE_WIDTH,

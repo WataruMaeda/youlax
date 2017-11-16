@@ -52,5 +52,7 @@
 			</dict>
 		</dict>
 	</dict>
+  <key>NSPhotoLibraryUsageDescription</key>
+  <string>Usage for selecting a profile image</string>
 </dict>
 </plist>

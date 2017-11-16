@@ -8,6 +8,9 @@ import { styles } from './styles';
 import { connect } from 'react-redux';
 import { mapStateToProps, mapDispatchToProps } from '../../action';
 
+// Image Picker
+import ImagePicker from 'react-native-image-crop-picker';
+
 // Assets
 import { items } from '../../data/items'
 const backButton = require('../../assets/icons/btn_back.png');
@@ -17,6 +20,13 @@ const allowImage = require('../../assets/icons/btn_allow.png');
 const checkImage = require('../../assets/icons/img-checked.png');
 
 class Settings extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      profile_image_path: ''
+    }
+  }
+
   render() {
     return (
       <View style={styles.container}>
@@ -40,11 +50,12 @@ class Settings extends React.Component {
           {/* Profile settings */}
           <View style={styles.profile_image_container}>
             <View style={styles.profile_image_wrapper}>
-              <Image
-                style={styles.profile_image}
-                source={profilePlaceholderImage}/>
+              {this.state.profile_image_path ?
+                <Image style={styles.profile_image} source={{url: this.state.profile_image_path}}/> :
+                <Image style={styles.profile_image} source={profilePlaceholderImage}/>
+              }
             </View>
-              <TouchableOpacity onPress={this._pressedChangeProfile()}>
+              <TouchableOpacity onPress={this._pressedChangeProfile.bind(this)}>
                 <Text style={styles.txt_change_profile}>Change Profile Photo</Text>
               </TouchableOpacity>
           </View>
@@ -107,7 +118,14 @@ class Settings extends React.Component {
   }
 
   _pressedChangeProfile() {
-    console.log('pressed change profile');
+    ImagePicker.openPicker({
+      width: 300,
+      height: 300,
+      cropping: true
+    }).then(image => {
+      console.log('New Profile Image Path is..' + image.path);
+      this.setState({profile_image_path: image.path});
+    });
   }
 
   _pressedFavoriteSound() {
