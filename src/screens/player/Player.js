@@ -14,7 +14,7 @@ import PlayerHeader from './PlayerHeader';
 import Settings from '../settings/Settings';
 
 // Assets
-import { items } from '../../data/items'
+import { items } from '../../models/items';
 const playImage = require('../../assets/icons/btn_play.png');
 const menuImage = require('../../assets/icons/btn_menu.png');
 const timerImage = require('../../assets/icons/btn_timer.png');

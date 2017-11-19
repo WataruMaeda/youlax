@@ -5,7 +5,7 @@ import { View, Text, Image, ImageBackground, SectionList, TouchableOpacity } fro
 import { styles } from './style';
 
 // Assets
-import { items } from '../../data/items'
+import { items } from '../../models/items'
 const bgImage = require('../../assets/images/bg_side_menu.png');
 const checkImage = require('../../assets/icons/img-checked.png');
 

@@ -9,8 +9,7 @@ import {
   TouchableOpacity, 
   TextInput, 
   FlatList,
-  Alert,
-  AsyncStorage
+  Alert
 } from 'react-native';
 import { styles } from './styles';
 
@@ -21,34 +20,35 @@ import { mapStateToProps, mapDispatchToProps } from '../../action';
 // Image Picker
 import ImagePicker from 'react-native-image-crop-picker';
 
+// User Account
+import { UserAccount } from '../../models/UserAccount';
+
 // Assets
-import { items } from '../../data/items'
+import { contents, items } from '../../models/items';
 const backButton = require('../../assets/icons/btn_back.png');
 const bgImage = require('../../assets/images/bg_side_menu.png');
 const profilePlaceholderImage = require('../../assets/icons/img_profile_placeholder.png');
 const allowImage = require('../../assets/icons/btn_allow.png');
 const checkImage = require('../../assets/icons/img-checked.png');
 
-// Key
-const USER_DATA_KEY = '@USER_DATA_KEY';
-
 class Settings extends React.Component {
   constructor() {
     super();
+    this.user = new UserAccount('', '', '');
     this.state = {
-      user_data:{
-        use_name: '',
-        favorite_sound: 'Fire',
-        profile_image_path: ''
-      }
+      name: this.user.name,
+      sound: this.user.sound,
+      imageUrl: this.user.imageUrl
     }
   }
 
   componentDidMount() {
-    // Get user data
-    this._getItemFromStorage(USER_DATA_KEY, (userData) => {
-      if (userData != null) {
-        this.setState({user_data: JSON.parse(userData)});
+    this.user._getFromStorage((success, value) => {
+      if (success == true) {
+        console.log(value);
+        this.state.name = value.name;
+        this.state.sound = value.sound;
+        this.state.imageUrl = value.imageUrl;
       }
     });
   }
@@ -76,8 +76,8 @@ class Settings extends React.Component {
           {/* Profile settings */}
           <View style={styles.profile_image_container}>
             <View style={styles.profile_image_wrapper}>
-              {this.state.profile_image_path ?
-                <Image style={styles.profile_image} source={{url: this.state.profile_image_path}}/> :
+              {this.state.imageUrl ?
+                <Image style={styles.profile_image} source={{url: this.state.imageUrl}}/> :
                 <Image style={styles.profile_image} source={profilePlaceholderImage}/>
               }
             </View>
@@ -94,8 +94,8 @@ class Settings extends React.Component {
                 color='white'
                 placeholder="Your Name"
                 placeholderTextColor='#8c8c8c'
-                title={this.state.user_name}
-                onChangeText={(text) => this.setState({text})}/>
+                title={this.state.name}
+                onChangeText={this._changedName}/>
             </View>
             <View style={[styles.view_line, {marginBottom: 12}]}/>
             <View style={{flexDirection:'row'}}>
@@ -103,7 +103,7 @@ class Settings extends React.Component {
               <TouchableOpacity 
                 style={{flex: 1, marginRight: 16, justifyContent: 'center'}}
                 onPress={() => this._pressedFavoriteSound()}>
-                <Text style={{color: '#8c8c8c', fontSize: 14 }}>{this.state.user_data['favorite_sound']}</Text>
+                <Text style={{color: '#8c8c8c', fontSize: 14 }}>{this.state.sound}</Text>
                 <Image style={{position: 'absolute', right: 10}} source={allowImage}/>
               </TouchableOpacity>
             </View>
@@ -130,22 +130,28 @@ class Settings extends React.Component {
 
   // Actions
   _pressedSection(item) {
-    var fav_sound = item["data"][0].title;
+    let sound = item["data"][0].title;
+    this.user.sound = sound;
+    this.setState({sound: this.user.sound});
   }
 
   _pressBack() {
     this.props.updateMenuState(true);
   }
 
+  _changedName = (name) => {
+    this.user.name = name;
+    this.setState({name: this.user.name});
+  }
+
   _pressDone() {
-    // Close section menu
     this.props.updateFavoriteToggleState(false);
 
     // Update user data
-    var jsonStr = JSON.stringify(this.state.user_data);
-    this._setItemToStorage(USER_DATA_KEY, jsonStr, (success) => {
-      (success == true) ? Alert.alert('Profile Updated') : Alert.alert('Failed');
-    });
+    this.user._setToStorage((success) => {
+      (success == true) ?
+        Alert.alert('Saved') : Alert.alert('Failed');
+    })
   }
 
   _pressedChangeProfile() {
@@ -160,20 +166,6 @@ class Settings extends React.Component {
 
   _pressedFavoriteSound() {
     this.props.updateFavoriteToggleState(!this.props.favoriteToggleState);
-  }
-
-  // AsyncStorage getter setter
-
-  _getItemFromStorage(key, callback = (result) => {}) {
-    AsyncStorage.getItem(key).then((value, error) => {
-      (error == null && value != null) ? callback(value) : callback(null);
-    });
-  }
-
-  _setItemToStorage(key, value, callback = (success) => {}) {
-    AsyncStorage.setItem(key, value, (error) => {
-      (error == null) ? callback(true) : callback(false);
-    });
   }
 }
 
