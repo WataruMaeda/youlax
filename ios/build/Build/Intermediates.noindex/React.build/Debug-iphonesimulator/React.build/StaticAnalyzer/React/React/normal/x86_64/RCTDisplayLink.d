@@ -1,10 +1,10 @@
 dependencies: \
-  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native/React/Base/RCTDisplayLink.m \
-  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native/React/Base/RCTDisplayLink.h \
-  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native/React/Base/RCTAssert.h \
-  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native/React/Base/RCTDefines.h \
-  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native/React/Base/RCTBridgeModule.h \
-  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native/React/Base/RCTFrameUpdate.h \
-  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native/React/Base/RCTModuleData.h \
-  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native/React/Base/RCTInvalidating.h \
-  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native/React/Profiler/RCTProfile.h
+  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/node_modules/react-native/React/Base/RCTDisplayLink.m \
+  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/node_modules/react-native/React/Base/RCTDisplayLink.h \
+  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/node_modules/react-native/React/Base/RCTModuleData.h \
+  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/node_modules/react-native/React/Profiler/RCTProfile.h

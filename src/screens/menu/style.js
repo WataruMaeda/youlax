@@ -16,8 +16,11 @@ export const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontStyle: 'italic',
     fontFamily: 'Baskerville',
-    backgroundColor: 'transparent'
-  },
+    backgroundColor: 'transparent',
+    shadowOffset:{width: 2,  height: 2,},
+    shadowColor: 'black',
+    shadowOpacity: 0.6,
+    },
   bg_image: {
     width: DEVICE_WIDTH / 3 * 2,
     height: DEVICE_HEIGHT,
@@ -32,12 +35,59 @@ export const styles = StyleSheet.create({
     alignSelf: 'flex-end',
     backgroundColor: 'transparent'
   },
-  view_header: {
+  touchable_area: {
     width: DEVICE_WIDTH / 3 * 2,
+  },
+  view_header: {
+    position: 'relative',
     height: 200,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'transparent'
+    backgroundColor: 'rgba(256, 256, 256, 0.3)',
+    borderRadius: 12,
+    padding: 10,
+    marginTop: 30,
+    marginRight: 15,
+    marginBottom: 20,
+    marginLeft: 15,
+    shadowOffset:{width: 5,  height: 5,},
+    shadowColor: 'black',
+    shadowOpacity: 0.2,
+  },
+  icon_setting: {
+    position: "absolute",
+    top: 14,
+    right: 14
+  },
+  profile_image_wrapper: {
+    width: 60,
+    height: 60,
+    borderRadius: 30,
+    marginTop: 10,
+    marginBottom: 4,
+    overflow: 'hidden',
+  },  
+  profile_image: {
+    width: 60,
+    height: 60,
+  },
+  user_name: {
+    color: 'white',
+    marginBottom: 20
+  },
+  favorite_sound: {
+    width: 180,
+    // alignItems: 'left',
+    paddingTop: 10,
+    borderTopColor: 'rgba(239, 240, 241, 0.3)',
+    borderTopWidth: 2,    
+  },
+  title_fa_sound: {
+    fontSize: 14,
+    color: '#A7A7A7'
+  },
+  selected_sound: {
+    color: 'white',
   },
   row_background_image: {
     width: DEVICE_WIDTH / 3 * 2,

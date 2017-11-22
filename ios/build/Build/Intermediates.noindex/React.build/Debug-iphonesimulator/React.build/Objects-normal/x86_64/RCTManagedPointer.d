@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native/React/Base/RCTManagedPointer.mm \
-  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native/React/Base/RCTManagedPointer.h
+  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/node_modules/react-native/React/Base/RCTManagedPointer.mm \
+  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/node_modules/react-native/React/Base/RCTManagedPointer.h
