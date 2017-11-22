@@ -28,7 +28,7 @@ import SideMenu from 'react-native-side-menu';
 import Menu from '../menu/Menu';
 
 // Sound
-const Sound = require('react-native-sound');
+import { AudioUtil } from './AudioUtil';
 
 class Player extends React.Component {
   constructor() {
@@ -36,11 +36,12 @@ class Player extends React.Component {
     this.state = {
       audioState: 'loading'
     }
+    this.audio = new AudioUtil();
   }
 
   componentDidMount() {
-    Sound.setCategory('Playback');
-    this._prepareToPlay();
+    var sound = items[this.props.sectionIndex]["data"][0]["sound"];
+    this.audio.control(sound);
   }
 
   render() {
@@ -69,47 +70,7 @@ class Player extends React.Component {
 
   // Sound
   _pressedPlaySound(item) {
-    if (this.props.currentSound != item.sound) {
-      this.props.updateCurrentSound(item.sound);
-      this._release();
-      this._prepareToPlay();
-      return;
-    }
-    switch(this.state.audioState) {
-      case 'loaded': { this._play(); break; }
-      case 'paused': { this._play(); break;  }
-      case 'playing': { this._pause(); break; }
-      case 'failed': { Alert.alert('Failed to load sound'); break; }
-      default: { break; }
-    }
-  }
-
-  _prepareToPlay() {
-    this.setState({audioState: 'loading'});
-    this.sound = new Sound(this.props.currentSound, Sound.MAIN_BUNDLE, (error) => {
-      if (error) {
-          this.setState({audioState: 'failed'});
-          return;
-      }
-      this.setState({audioState: 'loaded'});
-      this.sound.setNumberOfLoops(-1);
-      this._play();
-    });
-  }
-
-  _play() {
-    this.setState({audioState: 'playing'});
-    this.sound.play();
-  }
-
-  _pause() {
-    this.setState({audioState: 'paused'});
-    this.sound.pause();
-  }
-
-  _release() {
-    this.sound.stop();
-    this.sound.release();
+    this.audio.control(item.sound);
   }
 }
 
