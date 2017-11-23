@@ -28,19 +28,17 @@ import SideMenu from 'react-native-side-menu';
 import Menu from '../menu/Menu';
 
 // Sound
-import { AudioUtil } from './AudioUtil';
+import { AudioUtil } from '../../utils/AudioUtil';
 
 class Player extends React.Component {
   constructor() {
     super();
-    this.state = {
-      audioState: 'loading'
-    }
     this.audio = new AudioUtil();
   }
 
   componentDidMount() {
     var sound = items[this.props.sectionIndex]["data"][0]["sound"];
+    console.log('[item]' + items[0]["data"][0]["sound"]);
     this.audio.control(sound);
   }
 
@@ -61,7 +59,7 @@ class Player extends React.Component {
   _renderRow = ({item}) => (
     <ImageBackground
       style={styles.row_background_image}
-      source={{uri: item.image}}>
+      source={item.image}>
       <TouchableOpacity onPress={()=>this._pressedPlaySound(item)}>
         <Image source={playImage} style={styles.btn_play}/>
       </TouchableOpacity>

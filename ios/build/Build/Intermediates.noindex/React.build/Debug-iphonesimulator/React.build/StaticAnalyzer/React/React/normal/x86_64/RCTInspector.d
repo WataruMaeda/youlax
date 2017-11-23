@@ -1,12 +1,12 @@
 dependencies: \
-  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/node_modules/react-native/React/Inspector/RCTInspector.mm \
-  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/node_modules/react-native/React/Inspector/RCTInspector.h \
-  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/node_modules/react-native/React/Base/RCTDefines.h \
-  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/InspectorInterfaces.h \
-  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
-  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h \
-  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/node_modules/react-native/React/Inspector/RCTInspectorPackagerConnection.h \
-  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/node_modules/react-native/React/Base/RCTLog.h \
-  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/node_modules/react-native/React/Base/RCTAssert.h \
-  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/node_modules/react-native/React/Base/RCTUtils.h \
-  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/node_modules/react-native/React/../Libraries/WebSocket/RCTSRWebSocket.h
+  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native/React/Inspector/RCTInspector.mm \
+  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native/React/Inspector/RCTInspector.h \
+  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/wmaeda/Documents/GitHub/youlax/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/InspectorInterfaces.h \
+  /Users/wmaeda/Documents/GitHub/youlax/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
+  /Users/wmaeda/Documents/GitHub/youlax/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h \
+  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native/React/Inspector/RCTInspectorPackagerConnection.h \
+  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native/React/../Libraries/WebSocket/RCTSRWebSocket.h

@@ -1,14 +1,14 @@
 dependencies: \
-  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/node_modules/react-native/React/Modules/RCTDeviceInfo.m \
-  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/node_modules/react-native/React/Modules/RCTDeviceInfo.h \
-  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/node_modules/react-native/React/Base/RCTBridge.h \
-  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
-  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
-  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/node_modules/react-native/React/Base/RCTDefines.h \
-  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/node_modules/react-native/React/Base/RCTBridgeModule.h \
-  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/node_modules/react-native/React/Base/RCTFrameUpdate.h \
-  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/node_modules/react-native/React/Base/RCTInvalidating.h \
-  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/node_modules/react-native/React/Modules/RCTAccessibilityManager.h \
-  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/node_modules/react-native/React/Base/RCTAssert.h \
-  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/node_modules/react-native/React/Base/RCTEventDispatcher.h \
-  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/node_modules/react-native/React/Base/RCTUtils.h
+  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native/React/Modules/RCTDeviceInfo.m \
+  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native/React/Modules/RCTDeviceInfo.h \
+  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native/React/Modules/RCTAccessibilityManager.h \
+  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native/React/Base/RCTEventDispatcher.h \
+  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native/React/Base/RCTUtils.h

@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/node_modules/react-native/Libraries/Vibration/RCTVibration.m \
-  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/node_modules/react-native/Libraries/Vibration/RCTVibration.h \
-  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
-  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h
+  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native/Libraries/Vibration/RCTVibration.m \
+  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native/Libraries/Vibration/RCTVibration.h \
+  /Users/wmaeda/Documents/GitHub/youlax/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
+  /Users/wmaeda/Documents/GitHub/youlax/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h

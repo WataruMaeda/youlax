@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>FAKETEAMID.org.cocoapods.QBImagePicker</string>
+	<string>3TNAJJ5Z2T.org.cocoapods.QBImagePicker</string>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>FAKETEAMID.org.cocoapods.QBImagePicker</string>
+		<string>3TNAJJ5Z2T.org.cocoapods.QBImagePicker</string>
 	</array>
 </dict>
 </plist>

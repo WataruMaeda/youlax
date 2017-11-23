@@ -63,7 +63,7 @@ class Menu extends React.Component {
     <TouchableOpacity onPress={()=>this._pressedSection(item)}>
       <ImageBackground
         style={styles.row_background_image}
-        source={{uri: item["data"][0].image}}>
+        source={item["image"]}>
         <Text style={styles.lb_title}>{item["title"]}</Text>
         {this.props.sectionIndex == item["key"] && <Image source={checkImage} style={styles.check_image}/>}
       </ImageBackground>

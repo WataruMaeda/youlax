@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/node_modules/react-native/React/Base/RCTKeyCommands.m \
-  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/node_modules/react-native/React/Base/RCTKeyCommands.h \
-  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/node_modules/react-native/React/Base/RCTDefines.h \
-  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/node_modules/react-native/React/Base/RCTUtils.h \
-  /Users/ryutakahashi/Documents/Private_study/reactNative/youlax/node_modules/react-native/React/Base/RCTAssert.h
+  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native/React/Base/RCTKeyCommands.m \
+  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native/React/Base/RCTKeyCommands.h \
+  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native/React/Base/RCTAssert.h
