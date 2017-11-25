@@ -33,12 +33,13 @@ import { AudioUtil } from '../../utils/AudioUtil';
 class Player extends React.Component {
   constructor() {
     super();
-    this.audio = new AudioUtil();
+    if (this.audio == null) {
+      this.audio = new AudioUtil();
+    } 
   }
 
   componentDidMount() {
     var sound = items[this.props.sectionIndex]["data"][0]["sound"];
-    console.log('[item]' + items[0]["data"][0]["sound"]);
     this.audio.control(sound);
   }
 
@@ -60,16 +61,11 @@ class Player extends React.Component {
     <ImageBackground
       style={styles.row_background_image}
       source={item.image}>
-      <TouchableOpacity onPress={()=>this._pressedPlaySound(item)}>
+      <TouchableOpacity onPress={()=>this.audio.control(item.sound)}>
         <Image source={playImage} style={styles.btn_play}/>
       </TouchableOpacity>
     </ImageBackground>
   );
-
-  // Sound
-  _pressedPlaySound(item) {
-    this.audio.control(item.sound);
-  }
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Player);
