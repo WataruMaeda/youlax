@@ -59,59 +59,76 @@ class SettingScreen extends React.Component {
         <ImageBackground
           style={styles.bg_image}
           source={bgImage}>
-          {/* Header menu*/}
-          <View style={styles.header_container}>
-            <TouchableOpacity
-            style={styles.btn_left_menu_touchable}
-            onPress={()=>this._pressBack()}>
-            <Image source={backButton} style={styles.btn_header_menu}/>
-            </TouchableOpacity>
-            <Text style={styles.lb_title}>Settings</Text>
-            <TouchableOpacity
-            style={styles.btn_right_menu_touchable}
-            onPress={()=>this._pressDone()}>
-              <Text style={styles.txt_done}>Done</Text>
-            </TouchableOpacity>
-          </View>
+          {this._renderHeader()}
           {/* Profile settings */}
-          <View style={styles.profile_image_container}>
-            <View style={styles.profile_image_wrapper}>
-              {this.state.imageUrl ?
-                <Image style={styles.profile_image} source={{url: this.state.imageUrl}}/> :
-                <Image style={styles.profile_image} source={profilePlaceholderImage}/>
-              }
-            </View>
-              <TouchableOpacity onPress={this._pressedChangeProfile.bind(this)}>
-                <Text style={styles.txt_change_profile}>Change Profile Photo</Text>
-              </TouchableOpacity>
-          </View>
+          {this._renderProfileImage()}
           {/* Text input field */}
-          <View style={styles.textinput_container}>
-            <View style={{flexDirection:'row'}}>
-              <Text style={styles.textinput_label}>Name</Text>
-              <TextInput
-                style={styles.textInput_name}
-                color='white'
-                placeholder="Your Name"
-                placeholderTextColor='#8c8c8c'
-                title={this.state.name}
-                onChangeText={this._changedName}/>
-            </View>
-            <View style={[styles.view_line, {marginBottom: 12}]}/>
-            <View style={{flexDirection:'row'}}>
-              <Text style={styles.textinput_label}>Favorite{"\n"}Sound</Text>
-              <TouchableOpacity 
-                style={{flex: 1, marginRight: 16, justifyContent: 'center'}}
-                onPress={() => this._pressedFavoriteSound()}>
-                <Text style={{color: '#8c8c8c', fontSize: 14 }}>{this.state.sound}</Text>
-                <Image style={{position: 'absolute', right: 10}} source={allowImage}/>
-              </TouchableOpacity>
-            </View>
-            <View style={styles.view_line}/>
-          </View>
+          {this._renderProfileInfo()}
           {/* FlatList */}
           {this.props.favoriteToggleState == true && <FlatList data={items} renderItem={this._renderRow}/>}
         </ImageBackground>
+      </View>
+    );
+  }
+
+  _renderHeader() {
+    return(
+      <View style={styles.header_container}>
+        <TouchableOpacity
+        style={styles.btn_left_menu_touchable}
+        onPress={()=>this._pressBack()}>
+        <Image source={backButton} style={styles.btn_header_menu}/>
+        </TouchableOpacity>
+        <Text style={styles.lb_title}>Settings</Text>
+        <TouchableOpacity
+        style={styles.btn_right_menu_touchable}
+        onPress={()=>this._pressDone()}>
+          <Text style={styles.txt_done}>Done</Text>
+        </TouchableOpacity>
+      </View>
+    );
+  }
+
+  _renderProfileInfo() {
+    return(
+      <View style={styles.textinput_container}>
+        <View style={{flexDirection:'row'}}>
+          <Text style={styles.textinput_label}>Name</Text>
+          <TextInput
+            style={styles.textInput_name}
+            color='white'
+            placeholder="Your Name"
+            placeholderTextColor='#8c8c8c'
+            title={this.state.name}
+            onChangeText={this._changedName}/>
+        </View>
+        <View style={[styles.view_line, {marginBottom: 12}]}/>
+        <View style={{flexDirection:'row'}}>
+          <Text style={styles.textinput_label}>Favorite{"\n"}Sound</Text>
+          <TouchableOpacity 
+            style={{flex: 1, marginRight: 16, justifyContent: 'center'}}
+            onPress={() => this._pressedFavoriteSound()}>
+            <Text style={{color: '#8c8c8c', fontSize: 14 }}>{this.state.sound}</Text>
+            <Image style={{position: 'absolute', right: 10}} source={allowImage}/>
+          </TouchableOpacity>
+        </View>
+        <View style={styles.view_line}/>
+      </View>
+    );
+  }
+
+  _renderProfileImage() {
+    return(
+      <View style={styles.profile_image_container}>
+        <View style={styles.profile_image_wrapper}>
+          {this.state.imageUrl ?
+            <Image style={styles.profile_image} source={{url: this.state.imageUrl}}/> :
+            <Image style={styles.profile_image} source={profilePlaceholderImage}/>
+          }
+        </View>
+          <TouchableOpacity onPress={this._pressedChangeProfile.bind(this)}>
+            <Text style={styles.txt_change_profile}>Change Profile Photo</Text>
+          </TouchableOpacity>
       </View>
     );
   }
