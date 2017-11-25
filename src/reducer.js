@@ -3,8 +3,7 @@ const initialState = {
   menuScreen: 'PLAYER',
   sectionIndex: 0,
   currentSound: 'test_1.mp3',
-  favoriteToggleState: false,
-  pickerState: false
+  favoriteToggleState: false
 }
   
 export default function reducer(state = initialState, action) {
@@ -37,12 +36,6 @@ export default function reducer(state = initialState, action) {
         return {
           ...state,
           favoriteToggleState: action.favoriteToggleState
-        };
-
-      case 'PICKER_STATE':
-        return {
-          ...state,
-          pickerState: action.pickerState
         };
 
       default:

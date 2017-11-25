@@ -100,10 +100,26 @@ class PlayerScreen extends React.Component {
         dialogAnimation={slideAnimation}
         ref={(popupDialog) => { this.slideAnimationDialog = popupDialog; }}>
       <Picker
-        selectedValue='java'
+        selectedValue='30'
         onValueChange={(itemValue, itemIndex) => this.setState({language: itemValue})}>
-        <Picker.Item label="Java" value="java"/>
-        <Picker.Item label="JavaScript" value="js" />
+        <Picker.Item label="5 min" value="5"/>
+        <Picker.Item label="10 min" value="10" />
+        <Picker.Item label="15 min" value="15" />
+        <Picker.Item label="20 min" value="20" />
+        <Picker.Item label="30 min" value="30" />
+        <Picker.Item label="40 min" value="40" />
+        <Picker.Item label="50 min" value="50" />
+        <Picker.Item label="1 hour" value="60" />
+        <Picker.Item label="2 hour" value="120" />
+        <Picker.Item label="3 hour" value="180" />
+        <Picker.Item label="4 hour" value="240" />
+        <Picker.Item label="5 hour" value="300" />
+        <Picker.Item label="6 hour" value="360" />
+        <Picker.Item label="7 hour" value="420" />
+        <Picker.Item label="8 hour" value="480" />
+        <Picker.Item label="9 hour" value="540" />
+        <Picker.Item label="10 hour" value="600" />
+
       </Picker>
       <Button title="Done"/>
       <Button title="Cancel" onPress={()=>this.slideAnimationDialog.dismiss()}/>
@@ -114,11 +130,6 @@ class PlayerScreen extends React.Component {
   // Menu
   _pressMenu() {
     this.props.updateMenuState(!this.props.menuState);
-  }
-
-  // Timer
-  _pressTimer() {
-    this.props.updatePickerState(!this.props.pickerState);
   }
 }
 

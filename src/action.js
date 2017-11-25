@@ -18,9 +18,6 @@ export function mapStateToProps(state) {
       },
       updateFavoriteToggleState: (item) => {
         dispatch( {type: 'FAVORITE_TOGGLE_STATE', favoriteToggleState: item} );
-      },
-      updatePickerState: (item) => {
-        dispatch({type: 'PICKER_STATE', pickerState: item} );
       }
     }
   }
