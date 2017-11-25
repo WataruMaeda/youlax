@@ -160,7 +160,7 @@ class SettingScreen extends React.Component {
       height: 300,
       cropping: true
     }).then(image => {
-      this.setState({profile_image_path: image.path});
+      this.setState({imageUrl: image.path});
     });
   }
   
