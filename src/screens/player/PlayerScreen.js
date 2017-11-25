@@ -34,9 +34,9 @@ import { AudioPlayer } from '../../utils/AudioPlayer';
 class PlayerScreen extends React.Component {
   constructor() {
     super();
-    if (this.audio == null) {
-      this.audio = new AudioPlayer();
-    } 
+    (this.audio == null) ?
+      this.audio = new AudioPlayer() :
+      this.audio.release();
   }
 
   componentDidMount() {

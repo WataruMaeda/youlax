@@ -89,6 +89,22 @@ class SettingScreen extends React.Component {
     );
   }
 
+  _renderProfileImage() {
+    return(
+      <View style={styles.profile_image_container}>
+        <View style={styles.profile_image_wrapper}>
+          {this.state.imageUrl ?
+            <Image style={styles.profile_image} source={{url: this.state.imageUrl}}/> :
+            <Image style={styles.profile_image} source={profilePlaceholderImage}/>
+          }
+        </View>
+          <TouchableOpacity onPress={this._pressedChangeProfile.bind(this)}>
+            <Text style={styles.txt_change_profile}>Change Profile Photo</Text>
+          </TouchableOpacity>
+      </View>
+    );
+  }
+
   _renderProfileInfo() {
     return(
       <View style={styles.textinput_container}>
@@ -113,22 +129,6 @@ class SettingScreen extends React.Component {
           </TouchableOpacity>
         </View>
         <View style={styles.view_line}/>
-      </View>
-    );
-  }
-
-  _renderProfileImage() {
-    return(
-      <View style={styles.profile_image_container}>
-        <View style={styles.profile_image_wrapper}>
-          {this.state.imageUrl ?
-            <Image style={styles.profile_image} source={{url: this.state.imageUrl}}/> :
-            <Image style={styles.profile_image} source={profilePlaceholderImage}/>
-          }
-        </View>
-          <TouchableOpacity onPress={this._pressedChangeProfile.bind(this)}>
-            <Text style={styles.txt_change_profile}>Change Profile Photo</Text>
-          </TouchableOpacity>
       </View>
     );
   }
