@@ -90,12 +90,13 @@ export const styles = StyleSheet.create({
     width: DEVICE_WIDTH - 124,
     height: 20,
     left: 62,
-    fontSize: 20,
+    fontSize: 24,
     color: 'white',
     textAlign: 'center',
     position:'absolute',
     fontWeight: 'bold',
-    backgroundColor: 'transparent',
+    fontStyle: 'italic',
+    fontFamily: 'Baskerville',
     ...ifIphoneX({ top: 43.5 }, { top: 23.5 })
   },
   row_background_image: {

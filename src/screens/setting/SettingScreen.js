@@ -138,7 +138,7 @@ class SettingScreen extends React.Component {
     <TouchableOpacity onPress={()=>this._pressedSection(item)}>
       <ImageBackground
         style={styles.row_background_image}
-        source={{uri: item["data"][0].image}}>
+        source={item["data"][0].image}>
         <Text style={styles.lb_title}>{item["title"]}</Text>
         {this.props.sectionIndex == item["key"] && <Image source={checkImage} style={styles.check_image}/>}
       </ImageBackground>
@@ -182,6 +182,7 @@ class SettingScreen extends React.Component {
   }
   
   _pressedFavoriteSound() {
+    console.log("_pressedFavoriteSound");
     this.props.updateFavoriteToggleState(!this.props.favoriteToggleState);
   }
 }
