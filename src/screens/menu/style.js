@@ -77,7 +77,6 @@ export const styles = StyleSheet.create({
   },
   favorite_sound: {
     width: 180,
-    // alignItems: 'left',
     paddingTop: 10,
     borderTopColor: 'rgba(239, 240, 241, 0.3)',
     borderTopWidth: 2,    
