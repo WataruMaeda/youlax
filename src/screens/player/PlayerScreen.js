@@ -78,7 +78,7 @@ class PlayerScreen extends React.Component {
         </TouchableOpacity>
         <Text
           style={styles.lb_title}
-          numberOfLines={2}>Title of the Sound</Text>
+          numberOfLines={2}>{items[this.props.sectionIndex]["title"]}</Text>
         <TouchableOpacity
           style={styles.btn_right_menu_touchable}
           onPress={()=>this._pressTimer()}>

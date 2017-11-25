@@ -163,7 +163,7 @@ class SettingScreen extends React.Component {
       this.setState({profile_image_path: image.path});
     });
   }
-
+  
   _pressedFavoriteSound() {
     this.props.updateFavoriteToggleState(!this.props.favoriteToggleState);
   }
