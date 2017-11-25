@@ -25,14 +25,7 @@ class PlayerHeader extends React.Component {
   render() {
     return (
       <View style={styles.containerHeader}>
-        {this.props.pickerState == true &&
-          <Picker
-            selectedValue='java'
-            onValueChange={(itemValue, itemIndex) => this.setState({language: itemValue})}>
-            <Picker.Item label="Java" value="java"/>
-            <Picker.Item label="JavaScript" value="js" />
-          </Picker>
-        }
+        {this.props.pickerState == true && this._showTimer()}
         <TouchableOpacity
           style={styles.btn_left_menu_touchable}
           onPress={()=>this._pressMenu()}>
@@ -47,6 +40,17 @@ class PlayerHeader extends React.Component {
           <Image source={timerImage} style={styles.btn_header_menu}/>
         </TouchableOpacity>
       </View>
+    );
+  }
+
+  _showTimer() {
+    return (
+      <Picker
+      selectedValue='java'
+      onValueChange={(itemValue, itemIndex) => this.setState({language: itemValue})}>
+      <Picker.Item label="Java" value="java"/>
+      <Picker.Item label="JavaScript" value="js" />
+    </Picker>
     );
   }
 
