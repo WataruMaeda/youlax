@@ -10,12 +10,10 @@ import {
   Text,
   Picker
 } from 'react-native';
-import { styles } from './style';
-import PlayerHeader from './PlayerHeader';
-import Settings from '../settings/Settings';
+import { styles } from './Style';
 
 // Assets
-import { items } from '../../models/items';
+import { items } from '../../models/Item';
 const playImage = require('../../assets/icons/btn_play.png');
 const menuImage = require('../../assets/icons/btn_menu.png');
 const timerImage = require('../../assets/icons/btn_timer.png');
@@ -27,16 +25,17 @@ import { mapStateToProps, mapDispatchToProps } from '../../action';
 
 // Side Menu
 import SideMenu from 'react-native-side-menu';
-import Menu from '../menu/Menu';
+import SettingScreen from '../setting/SettingScreen';
+import MenuScreen from '../menu/MenuScreen';
 
 // Sound
-import { AudioUtil } from '../../utils/AudioUtil';
+import { AudioPlayer } from '../../utils/AudioPlayer';
 
-class Player extends React.Component {
+class PlayerScreen extends React.Component {
   constructor() {
     super();
     if (this.audio == null) {
-      this.audio = new AudioUtil();
+      this.audio = new AudioPlayer();
     } 
   }
 
@@ -111,4 +110,4 @@ class Player extends React.Component {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Player);
+export default connect(mapStateToProps, mapDispatchToProps)(PlayerScreen);

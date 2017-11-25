@@ -11,7 +11,7 @@ import {
   FlatList,
   Alert
 } from 'react-native';
-import { styles } from './styles';
+import { styles } from './Styles';
 
 // Redux
 import { connect } from 'react-redux';
@@ -24,14 +24,14 @@ import ImagePicker from 'react-native-image-crop-picker';
 import { UserAccount } from '../../models/UserAccount';
 
 // Assets
-import { contents, items } from '../../models/items';
+import { items } from '../../models/Item';
 const backButton = require('../../assets/icons/btn_back.png');
 const bgImage = require('../../assets/images/bg_side_menu.png');
 const profilePlaceholderImage = require('../../assets/icons/img_profile_placeholder.png');
 const allowImage = require('../../assets/icons/btn_allow.png');
 const checkImage = require('../../assets/icons/img-checked.png');
 
-class Settings extends React.Component {
+class SettingScreen extends React.Component {
   constructor() {
     super();
     this.user = new UserAccount('', '', '');
@@ -169,4 +169,4 @@ class Settings extends React.Component {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Settings);
+export default connect(mapStateToProps, mapDispatchToProps)(SettingScreen);

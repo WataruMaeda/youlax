@@ -11,13 +11,13 @@ import { Provider } from 'react-redux';
 import { store } from './src/store';
 
 // Component
-import Home from './src/screens/home/Home';
+import HomeScreen from './src/screens/home/HomeScreen';
 
 export default class App extends React.Component {
   render() {
     return (
       <Provider store={ store }>
-        <Home/>
+        <HomeScreen/>
       </Provider>
     );
   }

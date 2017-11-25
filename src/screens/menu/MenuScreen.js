@@ -2,10 +2,10 @@ import React from 'react';
 
 // Components
 import { View, Text, Image, ImageBackground, SectionList, TouchableOpacity } from 'react-native';
-import { styles } from './style';
+import { styles } from './Style';
 
 // Assets
-import { items } from '../../models/items'
+import { items } from '../../models/Item'
 const bgImage = require('../../assets/images/bg_side_menu.png');
 const checkImage = require('../../assets/icons/img-checked.png');
 const profilePlaceholderImage = require('../../assets/icons/img_profile_placeholder.png');
@@ -15,7 +15,7 @@ const settingImage = require('../../assets/icons/img-setting.png');
 import { connect } from 'react-redux';
 import { mapStateToProps, mapDispatchToProps } from '../../action';
 
-class Menu extends React.Component {
+class MenuScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
@@ -73,4 +73,4 @@ class Menu extends React.Component {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Menu);
+export default connect(mapStateToProps, mapDispatchToProps)(MenuScreen);

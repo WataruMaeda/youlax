@@ -2,7 +2,7 @@ import { Alert } from 'react-native';
 const Sound = require('react-native-sound');
 Sound.setCategory('Playback');
 
-export class AudioUtil {
+export class AudioPlayer {
     constructor() {
         this.sound = '';
         this.isReady = false;
