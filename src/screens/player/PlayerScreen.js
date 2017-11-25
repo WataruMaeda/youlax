@@ -30,7 +30,8 @@ import SettingScreen from '../setting/SettingScreen';
 import MenuScreen from '../menu/MenuScreen';
 
 // Popup Dialog
-import PopupDialog, { DialogTitle } from 'react-native-popup-dialog';
+import PopupDialog, { DialogTitle, SlideAnimation  } from 'react-native-popup-dialog';
+const slideAnimation = new SlideAnimation({ slideFrom: 'bottom' });
 
 // Sound
 import { AudioPlayer } from '../../utils/AudioPlayer';
@@ -85,7 +86,7 @@ class PlayerScreen extends React.Component {
           numberOfLines={2}>{items[this.props.sectionIndex]["title"]}</Text>
         <TouchableOpacity
           style={styles.btn_right_menu_touchable}
-          onPress={()=>this.popupDialog.show()}>
+          onPress={()=>this.slideAnimationDialog.show()}>
           <Image source={timerImage} style={styles.btn_header_menu}/>
         </TouchableOpacity>
       </View>
@@ -96,7 +97,8 @@ class PlayerScreen extends React.Component {
     return (
       <PopupDialog 
         dialogTitle={<DialogTitle title="Timer Setting" />}
-        ref={(popupDialog) => { this.popupDialog = popupDialog; }}>
+        dialogAnimation={slideAnimation}
+        ref={(popupDialog) => { this.slideAnimationDialog = popupDialog; }}>
       <Picker
         selectedValue='java'
         onValueChange={(itemValue, itemIndex) => this.setState({language: itemValue})}>
@@ -104,7 +106,7 @@ class PlayerScreen extends React.Component {
         <Picker.Item label="JavaScript" value="js" />
       </Picker>
       <Button title="Done"/>
-      <Button title="Cancel" onPress={()=>this.popupDialog.dismiss()}/>
+      <Button title="Cancel" onPress={()=>this.slideAnimationDialog.dismiss()}/>
     </PopupDialog>
     );
   }
