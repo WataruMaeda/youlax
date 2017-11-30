@@ -20,11 +20,27 @@ export const styles = StyleSheet.create({
     color: 'white',
     textAlign: 'center',
     position:'absolute',
+    marginTop: 10,
     fontWeight: 'bold',
     fontStyle: 'italic',
     fontFamily: 'Baskerville',
     backgroundColor: 'transparent',
     ...ifIphoneX({ top: 40 }, { top: 20 })
+  },
+  right_arrow: {
+    position: 'absolute',
+    justifyContent: 'center',
+    width: 18,
+    height: 32,
+    right: 10,    
+  },
+  left_arrow: {
+    position: 'absolute',
+    alignItems: 'center',
+    transform: [{ rotate: '180deg'}],
+    width: 18,
+    height: 32,
+    left: 10,    
   },
   btn_play: {
     width: 100,
