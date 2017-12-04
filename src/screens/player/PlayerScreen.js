@@ -21,8 +21,6 @@ const timerImage = require('../../assets/icons/btn_timer.png');
 const bgImage = require('../../assets/images/bg_side_menu.png');
 const arrowImage = require('../../assets/icons/btn_arrow_1.png');
 
-
-
 // Redux
 import { connect } from 'react-redux';
 import { mapStateToProps, mapDispatchToProps } from '../../action';
@@ -72,13 +70,12 @@ class PlayerScreen extends React.Component {
     );
   }
 
-  // PLAY BTN AND ARROW ICONS
   _renderRow = ({item}) => (
     <ImageBackground
       style={styles.row_background_image}
       source={item.image}>
-      <Image source={arrowImage} style={styles.right_arrow}/>
-      <Image source={arrowImage} style={styles.left_arrow}/>
+      {item.key != 0 && <Image source={arrowImage} style={styles.left_arrow}/>}
+      {item.key != 4 && <Image source={arrowImage} style={styles.right_arrow}/>}
       <TouchableOpacity onPress={()=>this.audio.control(item.sound)}>
         <Image source={playImage} style={styles.btn_play}/>
       </TouchableOpacity>
