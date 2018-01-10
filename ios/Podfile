@@ -8,6 +8,8 @@ target 'youlax' do
   # Pods for youlax
   pod 'RSKImageCropper'
   pod 'QBImagePickerController'
+  pod 'Firebase/Core'
+
 
   target 'youlax-tvOSTests' do
     inherit! :search_paths

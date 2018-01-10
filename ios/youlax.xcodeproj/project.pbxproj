@@ -35,6 +35,7 @@
 		2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E991DF850E9000B6D8A /* libRCTWebSocket-tvOS.a */; };
 		2D02E4C91E0B4AEC006451C7 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* youlaxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* youlaxTests.m */; };
+		31A6CFE7247E4BDF8349E18B /* libRNFirebase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45CF64F34D4049E182E26A5E /* libRNFirebase.a */; };
 		4186D27085A04F81AEA80391 /* libRNSound.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD6F1394FEC447F5B3229D63 /* libRNSound.a */; };
 		433F065674C31C83B1E85A98 /* libPods-youlaxTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD2DBEF31F1B9C4301BEA389 /* libPods-youlaxTests.a */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
@@ -66,6 +67,7 @@
 		A502FF231FC6450800D6AC00 /* ocean_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = A502FF091FC6450800D6AC00 /* ocean_3.wav */; };
 		A502FF241FC6450800D6AC00 /* ocean_4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A502FF0A1FC6450800D6AC00 /* ocean_4.mp3 */; };
 		A502FF251FC6450800D6AC00 /* ocean_5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A502FF0B1FC6450800D6AC00 /* ocean_5.mp3 */; };
+		A540285D2005DD1600A59A69 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A54028372005DD1600A59A69 /* GoogleService-Info.plist */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		EDC17D1212DE432CA7617997 /* libimageCropPicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACC5962EA5F74531A955E0A5 /* libimageCropPicker.a */; };
 /* End PBXBuildFile section */
@@ -260,6 +262,13 @@
 			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
 			remoteInfo = RCTText;
 		};
+		A54028962005DE7F00A59A69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67FD335426B947DEBF68E57E /* RNFirebase.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RNFirebase;
+		};
 		A58401C91FB91EDA00BAD834 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
@@ -373,10 +382,12 @@
 		2D02E47B1E0B4A5D006451C7 /* youlax-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "youlax-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* youlax-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "youlax-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D44734745BF2615737173E0 /* Pods-youlax-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-youlax-tvOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-youlax-tvOSTests/Pods-youlax-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		45CF64F34D4049E182E26A5E /* libRNFirebase.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNFirebase.a; sourceTree = "<group>"; };
 		49366792D6670D56FA725D04 /* Pods-youlax.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-youlax.debug.xcconfig"; path = "Pods/Target Support Files/Pods-youlax/Pods-youlax.debug.xcconfig"; sourceTree = "<group>"; };
 		49D8D0A3DBB06591FB12EA3E /* libPods-youlax.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-youlax.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E1F00C76A9D846BCBC4C8DE /* Pods-youlax-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-youlax-tvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-youlax-tvOSTests/Pods-youlax-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
+		67FD335426B947DEBF68E57E /* RNFirebase.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNFirebase.xcodeproj; path = "../node_modules/react-native-firebase/ios/RNFirebase.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		A502FEEE1FC6450800D6AC00 /* rain_1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rain_1.mp3; sourceTree = "<group>"; };
@@ -405,6 +416,7 @@
 		A502FF091FC6450800D6AC00 /* ocean_3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ocean_3.wav; sourceTree = "<group>"; };
 		A502FF0A1FC6450800D6AC00 /* ocean_4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ocean_4.mp3; sourceTree = "<group>"; };
 		A502FF0B1FC6450800D6AC00 /* ocean_5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ocean_5.mp3; sourceTree = "<group>"; };
+		A54028372005DD1600A59A69 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ACC5962EA5F74531A955E0A5 /* libimageCropPicker.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libimageCropPicker.a; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		BD2DBEF31F1B9C4301BEA389 /* libPods-youlaxTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-youlaxTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -443,6 +455,7 @@
 				4186D27085A04F81AEA80391 /* libRNSound.a in Frameworks */,
 				EDC17D1212DE432CA7617997 /* libimageCropPicker.a in Frameworks */,
 				74D0EE1FD9CD988068A66D98 /* libPods-youlax.a in Frameworks */,
+				31A6CFE7247E4BDF8349E18B /* libRNFirebase.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,6 +575,7 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				A54028372005DD1600A59A69 /* GoogleService-Info.plist */,
 			);
 			name = youlax;
 			sourceTree = "<group>";
@@ -645,6 +659,7 @@
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				D397B555C9D14728B0841B45 /* RNSound.xcodeproj */,
 				2BEC9DA092C1465598370618 /* imageCropPicker.xcodeproj */,
+				67FD335426B947DEBF68E57E /* RNFirebase.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -751,6 +766,14 @@
 			path = ../src/assets/sounds/ocean;
 			sourceTree = "<group>";
 		};
+		A54028932005DE7E00A59A69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A54028972005DE7F00A59A69 /* libRNFirebase.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		A5C71F021FBE531C00A57CE6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -764,6 +787,7 @@
 			children = (
 				DD6F1394FEC447F5B3229D63 /* libRNSound.a */,
 				ACC5962EA5F74531A955E0A5 /* libimageCropPicker.a */,
+				45CF64F34D4049E182E26A5E /* libRNFirebase.a */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -970,6 +994,10 @@
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
 				{
+					ProductGroup = A54028932005DE7E00A59A69 /* Products */;
+					ProjectRef = 67FD335426B947DEBF68E57E /* RNFirebase.xcodeproj */;
+				},
+				{
 					ProductGroup = A5F3F0F71FB8F00E0054ADFF /* Products */;
 					ProjectRef = D397B555C9D14728B0841B45 /* RNSound.xcodeproj */;
 				},
@@ -1160,6 +1188,13 @@
 			remoteRef = 832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		A54028972005DE7F00A59A69 /* libRNFirebase.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNFirebase.a;
+			remoteRef = A54028962005DE7F00A59A69 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		A58401CA1FB91EDA00BAD834 /* libthird-party.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1262,6 +1297,7 @@
 				A502FF1C1FC6450800D6AC00 /* forest_2.mp3 in Resources */,
 				A502FF221FC6450800D6AC00 /* ocean_2.mp3 in Resources */,
 				A502FF191FC6450800D6AC00 /* fire_4.mp3 in Resources */,
+				A540285D2005DD1600A59A69 /* GoogleService-Info.plist in Resources */,
 				A502FF171FC6450800D6AC00 /* fire_2.mp3 in Resources */,
 				A502FF0E1FC6450800D6AC00 /* rain_3.mp3 in Resources */,
 				A502FF151FC6450800D6AC00 /* wind_5.mp3 in Resources */,
@@ -1376,12 +1412,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-youlax/Pods-youlax-resources.sh",
-				$PODS_CONFIGURATION_BUILD_DIR/QBImagePickerController/QBImagePicker.bundle,
+				"${PODS_CONFIGURATION_BUILD_DIR}/QBImagePickerController/QBImagePicker.bundle",
 				"${PODS_ROOT}/RSKImageCropper/RSKImageCropper/RSKImageCropperStrings.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/QBImagePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RSKImageCropperStrings.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1561,12 +1598,14 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-sound/RNSound",
 					"$(SRCROOT)/../node_modules/react-native-image-crop-picker/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
 				INFOPLIST_FILE = youlaxTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
@@ -1589,12 +1628,14 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-sound/RNSound",
 					"$(SRCROOT)/../node_modules/react-native-image-crop-picker/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
 				INFOPLIST_FILE = youlaxTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
@@ -1618,6 +1659,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-sound/RNSound",
 					"$(SRCROOT)/../node_modules/react-native-image-crop-picker/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
 				INFOPLIST_FILE = youlax/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1642,6 +1684,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-sound/RNSound",
 					"$(SRCROOT)/../node_modules/react-native-image-crop-picker/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
 				INFOPLIST_FILE = youlax/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1672,11 +1715,13 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-sound/RNSound",
 					"$(SRCROOT)/../node_modules/react-native-image-crop-picker/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
 				INFOPLIST_FILE = "youlax-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
@@ -1708,11 +1753,13 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-sound/RNSound",
 					"$(SRCROOT)/../node_modules/react-native-image-crop-picker/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
 				INFOPLIST_FILE = "youlax-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
@@ -1746,6 +1793,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.youlax-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1771,6 +1819,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);

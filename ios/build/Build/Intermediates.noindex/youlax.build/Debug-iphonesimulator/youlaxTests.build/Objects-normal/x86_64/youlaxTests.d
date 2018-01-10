@@ -1,5 +1,6 @@
 dependencies: \
   /Users/wmaeda/Documents/GitHub/youlax/ios/youlaxTests/youlaxTests.m \
+  /Users/wmaeda/Documents/GitHub/youlax/ios/Pods/Firebase/Core/Sources/module.modulemap \
   /Users/wmaeda/Documents/GitHub/youlax/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLog.h \
   /Users/wmaeda/Documents/GitHub/youlax/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAssert.h \
   /Users/wmaeda/Documents/GitHub/youlax/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
