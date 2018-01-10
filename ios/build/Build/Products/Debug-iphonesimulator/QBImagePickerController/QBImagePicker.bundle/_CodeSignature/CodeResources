@@ -6,27 +6,27 @@
 	<dict>
 		<key>QBImagePicker.storyboardc/Info.plist</key>
 		<data>
-		QuWDttjvLLFLLplE5AB3s1DogBc=
+		KG+MAARMrEL3ddhnu29ufvFASGw=
 		</data>
 		<key>QBImagePicker.storyboardc/QBAlbumsNavigationController.nib</key>
 		<data>
-		KYzdmMSuND808hwDgxZBLxC5bVE=
+		Qeme7UuOZWr4tsg8mwImNU88Xwg=
 		</data>
 		<key>QBImagePicker.storyboardc/QBAlbumsViewController.nib</key>
 		<data>
-		GelaBiwMR3J/ImaoQ13QVsE2SVQ=
+		h+eM5RaTTzeoMvj+FCBNY786F0w=
 		</data>
 		<key>QBImagePicker.storyboardc/QBAssetsViewController.nib</key>
 		<data>
-		w+NeNTAgpmYsAnq0ZV9DMQ7rUIw=
+		Y7vZ9yz57aMIQ6WQldL4O6MYd8Q=
 		</data>
 		<key>QBImagePicker.storyboardc/QL5-wR-LYt-view-66K-TS-Yoc.nib</key>
 		<data>
-		A6tjlG+FCDyNjpEAzoOyPgp3f38=
+		aa3pea2buPXU4BRkbSM1e3GZ8I8=
 		</data>
 		<key>QBImagePicker.storyboardc/QiH-NZ-ZGN-view-sD2-zK-ryo.nib</key>
 		<data>
-		PAxgwGgeOF39LNqO+GMDzL0RmR0=
+		LFxIn942pKnB2p7cGQZK0qwCvLk=
 		</data>
 		<key>de.lproj/QBImagePicker.strings</key>
 		<dict>
@@ -80,66 +80,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QuWDttjvLLFLLplE5AB3s1DogBc=
+			KG+MAARMrEL3ddhnu29ufvFASGw=
 			</data>
 			<key>hash2</key>
 			<data>
-			zF85dCsHrZMvZWRhQ6xcLNtoDWqnuqTlEmhIT00KMCo=
+			WlgoolnWzu5eM/3KYeZKtiav3CK3A5tX4KsQfZVhFuM=
 			</data>
 		</dict>
 		<key>QBImagePicker.storyboardc/QBAlbumsNavigationController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KYzdmMSuND808hwDgxZBLxC5bVE=
+			Qeme7UuOZWr4tsg8mwImNU88Xwg=
 			</data>
 			<key>hash2</key>
 			<data>
-			I7tlFzp5WSMEvI+hhBWWdI0fihYeiubUuJV7qhThaAM=
+			vEcRIXkwGoESPiJ+mWlS67+eQsB4i1u0kpKel+C0SI0=
 			</data>
 		</dict>
 		<key>QBImagePicker.storyboardc/QBAlbumsViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GelaBiwMR3J/ImaoQ13QVsE2SVQ=
+			h+eM5RaTTzeoMvj+FCBNY786F0w=
 			</data>
 			<key>hash2</key>
 			<data>
-			vZOBPsosu1kqH69q055RgOykwio2Tkw5BRXDj/hjWPE=
+			xS32Alr08sXkHwkkr0u+1T8IvnhEG4XnqVbyn94/21s=
 			</data>
 		</dict>
 		<key>QBImagePicker.storyboardc/QBAssetsViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			w+NeNTAgpmYsAnq0ZV9DMQ7rUIw=
+			Y7vZ9yz57aMIQ6WQldL4O6MYd8Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			0fVIm7mABYvdzaCjVPV1fcXuw5GNjw1MnLz67wng61w=
+			67OabMyz6P57W3/M0um8ec1d4YjO3O3qX2ucmpGXg0M=
 			</data>
 		</dict>
 		<key>QBImagePicker.storyboardc/QL5-wR-LYt-view-66K-TS-Yoc.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			A6tjlG+FCDyNjpEAzoOyPgp3f38=
+			aa3pea2buPXU4BRkbSM1e3GZ8I8=
 			</data>
 			<key>hash2</key>
 			<data>
-			b9fFS+0u2yjiqHc8Ljn1lj85wcDqktW9MbxEPizyWkQ=
+			HPbYFxd4J6vgb4i8g9aCpm1AZsUxLCB2ZQp+kEPIUQ8=
 			</data>
 		</dict>
 		<key>QBImagePicker.storyboardc/QiH-NZ-ZGN-view-sD2-zK-ryo.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PAxgwGgeOF39LNqO+GMDzL0RmR0=
+			LFxIn942pKnB2p7cGQZK0qwCvLk=
 			</data>
 			<key>hash2</key>
 			<data>
-			B3W7lnI3nT2WOpq9ZXeuXyL4VqQqMO3eE1J0pqck0cQ=
+			oqaCHIl5accCEHUSFTyN9udFYN/9La2GUoveHshqB1A=
 			</data>
 		</dict>
 		<key>de.lproj/QBImagePicker.strings</key>
