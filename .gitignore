@@ -1,4 +1,4 @@
 .DS_Store
 /node_modules/
 package-lock.json
-/ios/GoogleService-Info.plist
+ios/GoogleService-Info.plist
