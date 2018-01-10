@@ -9,6 +9,7 @@ target 'youlax' do
   pod 'RSKImageCropper'
   pod 'QBImagePickerController'
   pod 'Firebase/Core'
+  pod 'Firebase/Database'
 
 
   target 'youlax-tvOSTests' do
