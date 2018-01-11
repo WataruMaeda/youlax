@@ -30,6 +30,16 @@ dependencies: \
   /Users/wmaeda/Documents/GitHub/youlax/ios/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h \
   /Users/wmaeda/Documents/GitHub/youlax/ios/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h \
   /Users/wmaeda/Documents/GitHub/youlax/ios/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h \
+  /Users/wmaeda/Documents/GitHub/youlax/ios/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap \
+  /Users/wmaeda/Documents/GitHub/youlax/ios/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h \
+  /Users/wmaeda/Documents/GitHub/youlax/ios/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h \
+  /Users/wmaeda/Documents/GitHub/youlax/ios/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h \
+  /Users/wmaeda/Documents/GitHub/youlax/ios/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h \
+  /Users/wmaeda/Documents/GitHub/youlax/ios/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h \
+  /Users/wmaeda/Documents/GitHub/youlax/ios/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h \
+  /Users/wmaeda/Documents/GitHub/youlax/ios/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h \
+  /Users/wmaeda/Documents/GitHub/youlax/ios/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h \
+  /Users/wmaeda/Documents/GitHub/youlax/ios/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h \
   /Users/wmaeda/Documents/GitHub/youlax/ios/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap \
   /Users/wmaeda/Documents/GitHub/youlax/ios/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h \
   /Users/wmaeda/Documents/GitHub/youlax/ios/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h \
