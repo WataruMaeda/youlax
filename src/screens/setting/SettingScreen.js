@@ -23,6 +23,9 @@ import ImagePicker from 'react-native-image-crop-picker';
 // User Account
 import { UserAccount } from '../../models/UserAccount';
 
+// Firebase Database
+import firebase from 'react-native-firebase';
+
 // Assets
 import { items } from '../../models/Item';
 const backButton = require('../../assets/icons/btn_back.png');

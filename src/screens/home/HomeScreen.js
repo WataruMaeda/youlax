@@ -14,9 +14,6 @@ import MenuScreen from '../menu/MenuScreen';
 import { connect } from 'react-redux';
 import { mapStateToProps, mapDispatchToProps } from '../../action';
 
-// Firebase Database
-import firebase from 'react-native-firebase';
-
 class HomeScreen extends React.Component {
   render() {
     return (
@@ -29,14 +26,6 @@ class HomeScreen extends React.Component {
         </View>
     </SideMenu>
     );
-  }
-
-  componentDidMount() {
-    firebase.database().ref('test').child("todo")
-      .push({
-        fha: 'yeahhhh!!!!',
-        pho: 'hooooooooooohhh!'
-           })
   }
 
   // Side Menu
