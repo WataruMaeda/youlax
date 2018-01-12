@@ -2,7 +2,6 @@ dependencies: \
   /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native-firebase/ios/RNFirebase/admob/RNFirebaseAdMobRewardedVideo.m \
   /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native-firebase/ios/RNFirebase/admob/RNFirebaseAdMobRewardedVideo.h \
   /Users/wmaeda/Documents/GitHub/youlax/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
-  ../../../ios/Pods/Firebase/Core/Sources/module.modulemap \
   /Users/wmaeda/Documents/GitHub/youlax/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
   /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native-firebase/ios/RNFirebase/RNFirebaseEvents.h \
   /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native-firebase/ios/RNFirebase/RNFirebaseUtil.h \

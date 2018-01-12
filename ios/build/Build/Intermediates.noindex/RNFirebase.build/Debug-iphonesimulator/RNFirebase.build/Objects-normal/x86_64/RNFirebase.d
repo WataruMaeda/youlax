@@ -1,7 +1,6 @@
 dependencies: \
   /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native-firebase/ios/RNFirebase/RNFirebase.m \
   /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native-firebase/ios/RNFirebase/RNFirebase.h \
-  ../../../ios/Pods/Firebase/Core/Sources/module.modulemap \
   /Users/wmaeda/Documents/GitHub/youlax/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTEventEmitter.h \
   /Users/wmaeda/Documents/GitHub/youlax/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
   /Users/wmaeda/Documents/GitHub/youlax/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
@@ -10,11 +9,9 @@ dependencies: \
   /Users/wmaeda/Documents/GitHub/youlax/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
   /Users/wmaeda/Documents/GitHub/youlax/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
   /Users/wmaeda/Documents/GitHub/youlax/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h \
-  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native-firebase/ios/../../../ios/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap \
-  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native-firebase/ios/../../../ios/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h \
-  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native-firebase/ios/../../../ios/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h \
-  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native-firebase/ios/../../../ios/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h \
-  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native-firebase/ios/../../../ios/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h \
-  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native-firebase/ios/../../../ios/Pods/Firebase/Core/Sources/module.modulemap \
-  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native-firebase/ios/../../../ios/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h \
-  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native-firebase/ios/../../../ios/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h
+  ../../../ios/Pods/Headers/Public/FirebaseCore/FirebaseCore/FirebaseCore.h \
+  ../../../ios/Pods/Headers/Public/FirebaseCore/FirebaseCore/FIRAnalyticsConfiguration.h \
+  ../../../ios/Pods/Headers/Public/FirebaseCore/FirebaseCore/FIRApp.h \
+  ../../../ios/Pods/Headers/Public/FirebaseCore/FirebaseCore/FIRConfiguration.h \
+  ../../../ios/Pods/Headers/Public/FirebaseCore/FirebaseCore/FIRLoggerLevel.h \
+  ../../../ios/Pods/Headers/Public/FirebaseCore/FirebaseCore/FIROptions.h

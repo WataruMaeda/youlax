@@ -1,18 +1,14 @@
 dependencies: \
   /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native-firebase/ios/RNFirebase/database/RNFirebaseDatabaseReference.m \
   /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native-firebase/ios/RNFirebase/database/RNFirebaseDatabaseReference.h \
-  ../../../ios/Pods/Firebase/Core/Sources/module.modulemap \
-  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native-firebase/ios/../../../ios/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap \
-  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native-firebase/ios/../../../ios/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h \
-  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native-firebase/ios/../../../ios/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h \
-  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native-firebase/ios/../../../ios/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h \
-  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native-firebase/ios/../../../ios/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h \
-  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native-firebase/ios/../../../ios/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h \
-  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native-firebase/ios/../../../ios/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h \
-  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native-firebase/ios/../../../ios/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h \
-  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native-firebase/ios/../../../ios/Pods/Firebase/Core/Sources/module.modulemap \
-  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native-firebase/ios/../../../ios/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h \
-  /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native-firebase/ios/../../../ios/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h \
+  ../../../ios/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabase.h \
+  ../../../ios/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabaseReference.h \
+  ../../../ios/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDatabaseQuery.h \
+  ../../../ios/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDataEventType.h \
+  ../../../ios/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRDataSnapshot.h \
+  ../../../ios/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRMutableData.h \
+  ../../../ios/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRTransactionResult.h \
+  ../../../ios/Pods/Headers/Public/FirebaseDatabase/FirebaseDatabase/FIRServerValue.h \
   /Users/wmaeda/Documents/GitHub/youlax/node_modules/react-native-firebase/ios/RNFirebase/database/RNFirebaseDatabase.h \
   /Users/wmaeda/Documents/GitHub/youlax/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
   /Users/wmaeda/Documents/GitHub/youlax/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
